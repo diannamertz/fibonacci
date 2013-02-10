@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		601C84AD16C687C100E996E4 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C84AC16C687C100E996E4 /* Squares.m */; };
+		60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F0C6C016AEA1D40096B6DE /* Seed.m */; };
+		60F4531A169769E800686965 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45319169769E800686965 /* Accelerate.framework */; };
+		60F4531C169769E800686965 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4531B169769E800686965 /* AVFoundation.framework */; };
+		60F4531E169769E800686965 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4531D169769E800686965 /* CoreFoundation.framework */; };
+		60F45320169769E800686965 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4531F169769E800686965 /* CoreGraphics.framework */; };
+		60F45322169769E800686965 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45321169769E800686965 /* CoreImage.framework */; };
+		60F45324169769E800686965 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45323169769E800686965 /* CoreMedia.framework */; };
+		60F45326169769E800686965 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45325169769E800686965 /* CoreText.framework */; };
+		60F45328169769E800686965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45327169769E800686965 /* Foundation.framework */; };
+		60F4532A169769E800686965 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45329169769E800686965 /* OpenGLES.framework */; };
+		60F4532C169769E800686965 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4532B169769E800686965 /* QuartzCore.framework */; };
+		60F4532E169769E800686965 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4532D169769E800686965 /* UIKit.framework */; };
+		60F45334169769E800686965 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60F45332169769E800686965 /* InfoPlist.strings */; };
+		60F45336169769E800686965 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F45335169769E800686965 /* main.m */; };
+		60F4533B169769E800686965 /* C4AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F4533A169769E800686965 /* C4AppDelegate.m */; };
+		60F4533D169769E800686965 /* C4WorkSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F4533C169769E800686965 /* C4WorkSpace.m */; };
+		60F45363169769E800686965 /* libC4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45362169769E800686965 /* libC4.a */; };
+		60F45372169769E900686965 /* C4Canvas.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60F45370169769E900686965 /* C4Canvas.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		601C84AB16C687C100E996E4 /* Squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Squares.h; path = ../Squares.h; sourceTree = "<group>"; };
+		601C84AC16C687C100E996E4 /* Squares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Squares.m; path = ../Squares.m; sourceTree = "<group>"; };
+		60F0C6BF16AEA1D40096B6DE /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
+		60F0C6C016AEA1D40096B6DE /* Seed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seed.m; sourceTree = "<group>"; };
+		60F45315169769E800686965 /* fibonacci_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fibonacci_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F45319169769E800686965 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		60F4531B169769E800686965 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		60F4531D169769E800686965 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		60F4531F169769E800686965 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		60F45321169769E800686965 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		60F45323169769E800686965 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		60F45325169769E800686965 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		60F45327169769E800686965 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60F45329169769E800686965 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		60F4532B169769E800686965 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		60F4532D169769E800686965 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		60F45331169769E800686965 /* fibonacci_ipad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fibonacci_ipad-Info.plist"; sourceTree = "<group>"; };
+		60F45333169769E800686965 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60F45335169769E800686965 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60F45337169769E800686965 /* fibonacci_ipad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fibonacci_ipad-Prefix.pch"; sourceTree = "<group>"; };
+		60F45338169769E800686965 /* C4WorkSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C4WorkSpace.h; sourceTree = "<group>"; };
+		60F45339169769E800686965 /* C4AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = C4AppDelegate.h; sourceTree = "<group>"; };
+		60F4533A169769E800686965 /* C4AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C4AppDelegate.m; sourceTree = "<group>"; };
+		60F4533C169769E800686965 /* C4WorkSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C4WorkSpace.m; sourceTree = "<group>"; };
+		60F4533F169769E800686965 /* C4AddSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AddSubview.h; path = Headers/C4AddSubview.h; sourceTree = "<group>"; };
+		60F45340169769E800686965 /* C4AssertionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AssertionHandler.h; path = Headers/C4AssertionHandler.h; sourceTree = "<group>"; };
+		60F45341169769E800686965 /* C4Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Camera.h; path = Headers/C4Camera.h; sourceTree = "<group>"; };
+		60F45342169769E800686965 /* C4CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CameraController.h; path = Headers/C4CameraController.h; sourceTree = "<group>"; };
+		60F45343169769E800686965 /* C4CanvasController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CanvasController.h; path = Headers/C4CanvasController.h; sourceTree = "<group>"; };
+		60F45344169769E800686965 /* C4CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CaptureVideoPreviewLayer.h; path = Headers/C4CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
+		60F45345169769E800686965 /* C4Control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Control.h; path = Headers/C4Control.h; sourceTree = "<group>"; };
+		60F45346169769E800686965 /* C4Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Defines.h; path = Headers/C4Defines.h; sourceTree = "<group>"; };
+		60F45347169769E800686965 /* C4EAGLES1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLES1Renderer.h; path = Headers/C4EAGLES1Renderer.h; sourceTree = "<group>"; };
+		60F45348169769E800686965 /* C4EAGLESRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLESRenderer.h; path = Headers/C4EAGLESRenderer.h; sourceTree = "<group>"; };
+		60F45349169769E800686965 /* C4EAGLLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLLayer.h; path = Headers/C4EAGLLayer.h; sourceTree = "<group>"; };
+		60F4534A169769E800686965 /* C4Font.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Font.h; path = Headers/C4Font.h; sourceTree = "<group>"; };
+		60F4534B169769E800686965 /* C4Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Foundation.h; path = Headers/C4Foundation.h; sourceTree = "<group>"; };
+		60F4534C169769E800686965 /* C4Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Gesture.h; path = Headers/C4Gesture.h; sourceTree = "<group>"; };
+		60F4534D169769E800686965 /* C4GL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL.h; path = Headers/C4GL.h; sourceTree = "<group>"; };
+		60F4534E169769E800686965 /* C4GL1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL1Renderer.h; path = Headers/C4GL1Renderer.h; sourceTree = "<group>"; };
+		60F4534F169769E800686965 /* C4Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Image.h; path = Headers/C4Image.h; sourceTree = "<group>"; };
+		60F45350169769E800686965 /* C4Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Label.h; path = Headers/C4Label.h; sourceTree = "<group>"; };
+		60F45351169769E800686965 /* C4Layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Layer.h; path = Headers/C4Layer.h; sourceTree = "<group>"; };
+		60F45352169769E800686965 /* C4LayerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4LayerAnimation.h; path = Headers/C4LayerAnimation.h; sourceTree = "<group>"; };
+		60F45353169769E800686965 /* C4Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Math.h; path = Headers/C4Math.h; sourceTree = "<group>"; };
+		60F45354169769E800686965 /* C4MethodDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4MethodDelay.h; path = Headers/C4MethodDelay.h; sourceTree = "<group>"; };
+		60F45355169769E800686965 /* C4Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Movie.h; path = Headers/C4Movie.h; sourceTree = "<group>"; };
+		60F45356169769E800686965 /* C4Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Notification.h; path = Headers/C4Notification.h; sourceTree = "<group>"; };
+		60F45357169769E800686965 /* C4Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Object.h; path = Headers/C4Object.h; sourceTree = "<group>"; };
+		60F45358169769E800686965 /* C4PlayerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4PlayerLayer.h; path = Headers/C4PlayerLayer.h; sourceTree = "<group>"; };
+		60F45359169769E800686965 /* C4Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Sample.h; path = Headers/C4Sample.h; sourceTree = "<group>"; };
+		60F4535A169769E800686965 /* C4Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Shape.h; path = Headers/C4Shape.h; sourceTree = "<group>"; };
+		60F4535B169769E800686965 /* C4ShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ShapeLayer.h; path = Headers/C4ShapeLayer.h; sourceTree = "<group>"; };
+		60F4535C169769E800686965 /* C4Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Timer.h; path = Headers/C4Timer.h; sourceTree = "<group>"; };
+		60F4535D169769E800686965 /* C4Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Vector.h; path = Headers/C4Vector.h; sourceTree = "<group>"; };
+		60F4535E169769E800686965 /* C4View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4View.h; path = Headers/C4View.h; sourceTree = "<group>"; };
+		60F4535F169769E800686965 /* C4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ViewController.h; path = Headers/C4ViewController.h; sourceTree = "<group>"; };
+		60F45360169769E800686965 /* C4Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Window.h; path = Headers/C4Window.h; sourceTree = "<group>"; };
+		60F45361169769E800686965 /* UITouch+C4Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITouch+C4Touch.h"; path = "Headers/UITouch+C4Touch.h"; sourceTree = "<group>"; };
+		60F45362169769E800686965 /* libC4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libC4.a; path = Library/libC4.a; sourceTree = "<group>"; };
+		60F45371169769E900686965 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/C4Canvas.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60F45312169769E800686965 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F4531A169769E800686965 /* Accelerate.framework in Frameworks */,
+				60F4531C169769E800686965 /* AVFoundation.framework in Frameworks */,
+				60F4531E169769E800686965 /* CoreFoundation.framework in Frameworks */,
+				60F45320169769E800686965 /* CoreGraphics.framework in Frameworks */,
+				60F45322169769E800686965 /* CoreImage.framework in Frameworks */,
+				60F45324169769E800686965 /* CoreMedia.framework in Frameworks */,
+				60F45326169769E800686965 /* CoreText.framework in Frameworks */,
+				60F45328169769E800686965 /* Foundation.framework in Frameworks */,
+				60F4532A169769E800686965 /* OpenGLES.framework in Frameworks */,
+				60F4532C169769E800686965 /* QuartzCore.framework in Frameworks */,
+				60F4532E169769E800686965 /* UIKit.framework in Frameworks */,
+				60F45363169769E800686965 /* libC4.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60F4530A169769E800686965 = {
+			isa = PBXGroup;
+			children = (
+				60F4532F169769E800686965 /* fibonacci_ipad */,
+				60F45318169769E800686965 /* Frameworks */,
+				60F45316169769E800686965 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60F45316169769E800686965 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60F45315169769E800686965 /* fibonacci_ipad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60F45318169769E800686965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60F45319169769E800686965 /* Accelerate.framework */,
+				60F4531B169769E800686965 /* AVFoundation.framework */,
+				60F4531D169769E800686965 /* CoreFoundation.framework */,
+				60F4531F169769E800686965 /* CoreGraphics.framework */,
+				60F45321169769E800686965 /* CoreImage.framework */,
+				60F45323169769E800686965 /* CoreMedia.framework */,
+				60F45325169769E800686965 /* CoreText.framework */,
+				60F45327169769E800686965 /* Foundation.framework */,
+				60F45329169769E800686965 /* OpenGLES.framework */,
+				60F4532B169769E800686965 /* QuartzCore.framework */,
+				60F4532D169769E800686965 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60F4532F169769E800686965 /* fibonacci_ipad */ = {
+			isa = PBXGroup;
+			children = (
+				60F4533C169769E800686965 /* C4WorkSpace.m */,
+				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
+				60F0C6C016AEA1D40096B6DE /* Seed.m */,
+				601C84AB16C687C100E996E4 /* Squares.h */,
+				601C84AC16C687C100E996E4 /* Squares.m */,
+				60F4533E169769E800686965 /* Framework */,
+				60F45330169769E800686965 /* Supporting Files */,
+			);
+			path = fibonacci_ipad;
+			sourceTree = "<group>";
+		};
+		60F45330169769E800686965 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60F45331169769E800686965 /* fibonacci_ipad-Info.plist */,
+				60F45332169769E800686965 /* InfoPlist.strings */,
+				60F45335169769E800686965 /* main.m */,
+				60F45337169769E800686965 /* fibonacci_ipad-Prefix.pch */,
+				60F45338169769E800686965 /* C4WorkSpace.h */,
+				60F45339169769E800686965 /* C4AppDelegate.h */,
+				60F4533A169769E800686965 /* C4AppDelegate.m */,
+				60F45370169769E900686965 /* C4Canvas.xib */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60F4533E169769E800686965 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				60F4533F169769E800686965 /* C4AddSubview.h */,
+				60F45340169769E800686965 /* C4AssertionHandler.h */,
+				60F45341169769E800686965 /* C4Camera.h */,
+				60F45342169769E800686965 /* C4CameraController.h */,
+				60F45343169769E800686965 /* C4CanvasController.h */,
+				60F45344169769E800686965 /* C4CaptureVideoPreviewLayer.h */,
+				60F45345169769E800686965 /* C4Control.h */,
+				60F45346169769E800686965 /* C4Defines.h */,
+				60F45347169769E800686965 /* C4EAGLES1Renderer.h */,
+				60F45348169769E800686965 /* C4EAGLESRenderer.h */,
+				60F45349169769E800686965 /* C4EAGLLayer.h */,
+				60F4534A169769E800686965 /* C4Font.h */,
+				60F4534B169769E800686965 /* C4Foundation.h */,
+				60F4534C169769E800686965 /* C4Gesture.h */,
+				60F4534D169769E800686965 /* C4GL.h */,
+				60F4534E169769E800686965 /* C4GL1Renderer.h */,
+				60F4534F169769E800686965 /* C4Image.h */,
+				60F45350169769E800686965 /* C4Label.h */,
+				60F45351169769E800686965 /* C4Layer.h */,
+				60F45352169769E800686965 /* C4LayerAnimation.h */,
+				60F45353169769E800686965 /* C4Math.h */,
+				60F45354169769E800686965 /* C4MethodDelay.h */,
+				60F45355169769E800686965 /* C4Movie.h */,
+				60F45356169769E800686965 /* C4Notification.h */,
+				60F45357169769E800686965 /* C4Object.h */,
+				60F45358169769E800686965 /* C4PlayerLayer.h */,
+				60F45359169769E800686965 /* C4Sample.h */,
+				60F4535A169769E800686965 /* C4Shape.h */,
+				60F4535B169769E800686965 /* C4ShapeLayer.h */,
+				60F4535C169769E800686965 /* C4Timer.h */,
+				60F4535D169769E800686965 /* C4Vector.h */,
+				60F4535E169769E800686965 /* C4View.h */,
+				60F4535F169769E800686965 /* C4ViewController.h */,
+				60F45360169769E800686965 /* C4Window.h */,
+				60F45361169769E800686965 /* UITouch+C4Touch.h */,
+				60F45362169769E800686965 /* libC4.a */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60F45314169769E800686965 /* fibonacci_ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60F45395169769EA00686965 /* Build configuration list for PBXNativeTarget "fibonacci_ipad" */;
+			buildPhases = (
+				60F45311169769E800686965 /* Sources */,
+				60F45312169769E800686965 /* Frameworks */,
+				60F45313169769E800686965 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fibonacci_ipad;
+			productName = fibonacci_ipad;
+			productReference = 60F45315169769E800686965 /* fibonacci_ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60F4530C169769E800686965 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dianna Mertz";
+			};
+			buildConfigurationList = 60F4530F169769E800686965 /* Build configuration list for PBXProject "fibonacci_ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60F4530A169769E800686965;
+			productRefGroup = 60F45316169769E800686965 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60F45314169769E800686965 /* fibonacci_ipad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60F45313169769E800686965 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F45334169769E800686965 /* InfoPlist.strings in Resources */,
+				60F45372169769E900686965 /* C4Canvas.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60F45311169769E800686965 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60F45336169769E800686965 /* main.m in Sources */,
+				60F4533B169769E800686965 /* C4AppDelegate.m in Sources */,
+				60F4533D169769E800686965 /* C4WorkSpace.m in Sources */,
+				60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */,
+				601C84AD16C687C100E996E4 /* Squares.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60F45332169769E800686965 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F45333169769E800686965 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60F45370169769E900686965 /* C4Canvas.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60F45371169769E900686965 /* en */,
+			);
+			name = C4Canvas.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60F45393169769EA00686965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		60F45394169769EA00686965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60F45396169769EA00686965 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fibonacci_ipad/fibonacci_ipad-Prefix.pch";
+				INFOPLIST_FILE = "fibonacci_ipad/fibonacci_ipad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/fibonacci_ipad/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		60F45397169769EA00686965 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fibonacci_ipad/fibonacci_ipad-Prefix.pch";
+				INFOPLIST_FILE = "fibonacci_ipad/fibonacci_ipad-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/fibonacci_ipad/Library\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60F4530F169769E800686965 /* Build configuration list for PBXProject "fibonacci_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F45393169769EA00686965 /* Debug */,
+				60F45394169769EA00686965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60F45395169769EA00686965 /* Build configuration list for PBXNativeTarget "fibonacci_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60F45396169769EA00686965 /* Debug */,
+				60F45397169769EA00686965 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60F4530C169769E800686965 /* Project object */;
+}
