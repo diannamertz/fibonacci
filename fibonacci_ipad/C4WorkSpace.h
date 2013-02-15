@@ -14,6 +14,9 @@
  @warning See C4CanvasController for a full list of functionality available in C4WorkSpace.
  */
 
-@interface C4WorkSpace : C4CanvasController 
+#import "Squares.h"
+
+@interface C4WorkSpace : C4CanvasController <SquaresDelegate>
+
 
 @end

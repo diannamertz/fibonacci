@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		601C84AD16C687C100E996E4 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C84AC16C687C100E996E4 /* Squares.m */; };
+		6076B3A716CCF2A400D13431 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6076B3A616CCF2A400D13431 /* Intro.m */; };
 		60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F0C6C016AEA1D40096B6DE /* Seed.m */; };
 		60F4531A169769E800686965 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45319169769E800686965 /* Accelerate.framework */; };
 		60F4531C169769E800686965 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4531B169769E800686965 /* AVFoundation.framework */; };
@@ -31,6 +32,8 @@
 /* Begin PBXFileReference section */
 		601C84AB16C687C100E996E4 /* Squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Squares.h; path = ../Squares.h; sourceTree = "<group>"; };
 		601C84AC16C687C100E996E4 /* Squares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Squares.m; path = ../Squares.m; sourceTree = "<group>"; };
+		6076B3A516CCF2A400D13431 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
+		6076B3A616CCF2A400D13431 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		60F0C6BF16AEA1D40096B6DE /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
 		60F0C6C016AEA1D40096B6DE /* Seed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seed.m; sourceTree = "<group>"; };
 		60F45315169769E800686965 /* fibonacci_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fibonacci_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +157,8 @@
 			isa = PBXGroup;
 			children = (
 				60F4533C169769E800686965 /* C4WorkSpace.m */,
+				6076B3A516CCF2A400D13431 /* Intro.h */,
+				6076B3A616CCF2A400D13431 /* Intro.m */,
 				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
 				60F0C6C016AEA1D40096B6DE /* Seed.m */,
 				601C84AB16C687C100E996E4 /* Squares.h */,
@@ -290,6 +295,7 @@
 				60F4533D169769E800686965 /* C4WorkSpace.m in Sources */,
 				60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */,
 				601C84AD16C687C100E996E4 /* Squares.m in Sources */,
+				6076B3A716CCF2A400D13431 /* Intro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

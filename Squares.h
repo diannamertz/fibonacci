@@ -7,11 +7,25 @@
 //
 
 #import "C4Shape.h"
+@class Squares;
+
+@protocol SquaresDelegate <NSObject>
+-(void)startPinecone;
+@end
 
 @interface Squares : C4Shape
 
+@property (nonatomic, assign) id<SquaresDelegate> squaresDelegate;
+
 -(void)touchesBegan;
 -(void)touchesEnded;
--(void)testSquares;
+-(void)endEightSquares;
 
 @end
+
+
+
+
+
+
+

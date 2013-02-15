@@ -15,13 +15,15 @@
     C4Label *labelAll;
 }
 
+//@synthesize squaresDelegate;
+
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self !=nil) {
         //[self setup];
         [self rect:frame];
-    }
+        }
     return self;
 }
 
@@ -30,39 +32,39 @@
     //define the squares
     
     //define colors
-    color1 = [UIColor colorWithRed:0.9725f green:0.9294f blue:0.8039f alpha:1.0f];
-    color2 = [UIColor colorWithRed:0.8941f green:0.8863f blue:0.7882f alpha:1.0f];
-    color3 = [UIColor colorWithRed:0.7294f green:0.7764f blue:0.6902f alpha:1.0f];
-    color4 = [UIColor colorWithRed:0.3569f green:0.2235f blue:0.1882f alpha:1.0f];
-    color5 = [UIColor colorWithRed:0.4902f green:0.4157f blue:0.4f alpha:1.0f];
-    color6 = [UIColor colorWithRed:0.8118f green:0.8314f blue:0.7373f alpha:1.0f];
-    color7 = [UIColor colorWithRed:0.7333f green:0.6902f blue:0.6627f alpha:1.0f];
+    color1 = [UIColor colorWithRed:RGBToFloat(208) green:RGBToFloat(45) blue:RGBToFloat(48) alpha:RGBToFloat(255)];
+    color2 = [UIColor colorWithRed:RGBToFloat(210) green:RGBToFloat(140) blue:RGBToFloat(132) alpha:RGBToFloat(255)];
+    color3 = [UIColor colorWithRed:RGBToFloat(214) green:RGBToFloat(183) blue:RGBToFloat(178) alpha:RGBToFloat(255)];
+    color4 = [UIColor colorWithRed:RGBToFloat(210) green:RGBToFloat(140) blue:RGBToFloat(132) alpha:RGBToFloat(255)];
+    color5 = [UIColor colorWithRed:RGBToFloat(191) green:RGBToFloat(187) blue:RGBToFloat(155) alpha:RGBToFloat(255)];
+    color6 = [UIColor colorWithRed:RGBToFloat(178) green:RGBToFloat(145) blue:RGBToFloat(138) alpha:RGBToFloat(255)];
+    color7 = [UIColor colorWithRed:RGBToFloat(255) green:RGBToFloat(255) blue:RGBToFloat(255) alpha:RGBToFloat(255)];
     
     int x = 75;
     
     square = [C4Shape rect:CGRectMake(2*x,((self.height)-3*x),x,-x)];
-    square.strokeColor = [UIColor clearColor];
-    square.fillColor = color1;
+    square.strokeColor = color2;
+    square.fillColor = [UIColor whiteColor];
     
     square1 = [C4Shape rect:CGRectMake(2*x,((self.height)-4*x),x,-x)];
-    square1.strokeColor = [UIColor clearColor];
-    square1.fillColor = color2;
+    square1.strokeColor = color2;
+    square1.fillColor = [UIColor whiteColor];
     
     square2 = [C4Shape rect:CGRectMake(0,((self.height)-3*x),2*x,-2*x)];
-    square2.strokeColor = [UIColor clearColor];
-    square2.fillColor = color3;
+    square2.strokeColor = color2;
+    square2.fillColor = [UIColor whiteColor];
     
     square3 = [C4Shape rect:CGRectMake(0,self.height,3*x,-3*x)];
-    square3.strokeColor = [UIColor clearColor];
-    square3.fillColor = color4;
+    square3.strokeColor = color2;
+    square3.fillColor = [UIColor whiteColor];
     
     square5 = [C4Shape rect:CGRectMake(3*x,self.height,5*x,-5*x)];
-    square5.strokeColor = [UIColor clearColor];
-    square5.fillColor = color5;
+    square5.strokeColor = color2;
+    square5.fillColor = [UIColor whiteColor];
     
     square8 = [C4Shape rect:CGRectMake(0,((self.height)-5*x),8*x,-8*x)];
-    square8.strokeColor = [UIColor clearColor];
-    square8.fillColor = color6;
+    square8.strokeColor = color2;
+    square8.fillColor = [UIColor whiteColor];
     
     //square text
     
@@ -78,20 +80,25 @@
     label1.textColor = color5;
     label1.transform = CGAffineTransformMakeRotation( -M_PI/2);
     
-    C4Label *label2 = [C4Label labelWithText:@"2 = 1 + 1" font:squaresFont];
+    C4Label *label2 = [C4Label labelWithText:@"2" font:squaresFont];
     label2.center = square2.center;
-    label2.textColor = [UIColor whiteColor];
+    label2.textColor = color5;
     label2.transform = CGAffineTransformMakeRotation( -M_PI/2);
     
-    C4Label *label3 = [C4Label labelWithText:@"3 = 2 + 1" font:squaresFont];
+    C4Label *label3 = [C4Label labelWithText:@"3" font:squaresFont];
     label3.center = square3.center;
-    label3.textColor = [UIColor whiteColor];
+    label3.textColor = color5;
     label3.transform = CGAffineTransformMakeRotation( -M_PI/2);
     
-    C4Label *label5 = [C4Label labelWithText:@"5 = 3 + 2" font:squaresFont];
+    C4Label *label5 = [C4Label labelWithText:@"5" font:squaresFont];
     label5.center = square5.center;
-    label5.textColor = [UIColor whiteColor];
+    label5.textColor = color5;
     label5.transform = CGAffineTransformMakeRotation( -M_PI/2);
+    
+    C4Label *label8 = [C4Label labelWithText:@"8" font:squaresFont];
+    label8.center = square8.center;
+    label8.textColor = color5;
+    label8.transform = CGAffineTransformMakeRotation( -M_PI/2);
     
     //place the squares
     allSquares = [C4Shape rect:CGRectMake(0,0,(8*x),(13*x))];
@@ -109,7 +116,7 @@
     [allSquares.self addLabel:label2];
     [allSquares.self addLabel:label3];
     [allSquares.self addLabel:label5];
-
+    [allSquares.self addLabel:label8];
 }
 
 - (void)drawRect:(CGRect)rect
@@ -127,9 +134,10 @@
     labelAll.highlighted = NO;
 }
 
--(void)testSquares {
-    C4Log(@"test");
-    self.fillColor = color1;
+-(void)endEightSquares {
+    C4Log(@"endEightSquares");
+    [self removeFromSuperview];
+    [self.squaresDelegate startPinecone];
 }
 
 @end

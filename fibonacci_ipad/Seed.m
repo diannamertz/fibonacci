@@ -19,7 +19,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self ellipse:frame];
+        [self rect:frame];
     }
     return self;
 }
@@ -27,15 +27,13 @@
 -(void)setup
 {
     //define colors
-    color1 = [UIColor colorWithRed:0.9725f green:0.9294f blue:0.8039f alpha:1.0f];
-    color2 = [UIColor colorWithRed:0.8941f green:0.8863f blue:0.7882f alpha:1.0f];
-    color3 = [UIColor colorWithRed:0.7294f green:0.7764f blue:0.6902f alpha:1.0f];
-    color4 = [UIColor colorWithRed:0.3569f green:0.2235f blue:0.1882f alpha:1.0f];
-    color5 = [UIColor colorWithRed:0.4902f green:0.4157f blue:0.4f alpha:1.0f];
-    color6 = [UIColor colorWithRed:0.8118f green:0.8314f blue:0.7373f alpha:1.0f];
-    color7 = [UIColor colorWithRed:0.7333f green:0.6902f blue:0.6627f alpha:1.0f];
-    
-    
+    color1 = [UIColor colorWithRed:RGBToFloat(208) green:RGBToFloat(45) blue:RGBToFloat(48) alpha:RGBToFloat(255)];
+    color2 = [UIColor colorWithRed:RGBToFloat(210) green:RGBToFloat(140) blue:RGBToFloat(132) alpha:RGBToFloat(255)];
+    color3 = [UIColor colorWithRed:RGBToFloat(214) green:RGBToFloat(183) blue:RGBToFloat(178) alpha:RGBToFloat(255)];
+    color4 = [UIColor colorWithRed:RGBToFloat(210) green:RGBToFloat(140) blue:RGBToFloat(132) alpha:RGBToFloat(255)];
+    color5 = [UIColor colorWithRed:RGBToFloat(191) green:RGBToFloat(187) blue:RGBToFloat(155) alpha:RGBToFloat(255)];
+    color6 = [UIColor colorWithRed:RGBToFloat(178) green:RGBToFloat(145) blue:RGBToFloat(138) alpha:RGBToFloat(255)];
+    color7 = [UIColor colorWithRed:RGBToFloat(255) green:RGBToFloat(255) blue:RGBToFloat(255) alpha:RGBToFloat(255)];
     
     //define the meristem
     C4Shape *meristem;
@@ -114,6 +112,7 @@
         seedArcCenter.x = 200 + r*sin(t)*.09*n;
         seedArcCenter.y = 200 + r*cos(t)*.09*n;
         
+        
         //define the seed
         seed = [[C4Shape alloc] initWithFrame:CGRectMake(((seedArcCenter.x)-4*r), ((seedArcCenter.y)-4*r), 4*r, 4*r)];
         
@@ -125,9 +124,27 @@
         seed.fillColor = color7;
         seed.strokeColor = color5;
         
+        if (n % 8) {
+            self.fillColor = color3;
+            
+        }
+        C4Log(@"@%",n);
+ 
+        /*
+        int s;
+        for(s=1; s>4;s++) {
+            if ((n+s) % 8) {
+                seed.fillColor = color2;
+            }
+        }
+        */
+
         [cone.self addShape:seed];
-        
+
     }
+
+
+
 }
 
 @end

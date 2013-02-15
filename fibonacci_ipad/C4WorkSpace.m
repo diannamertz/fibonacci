@@ -8,27 +8,43 @@
 
 #import "C4Workspace.h"
 #import "Seed.h"
-#import "Squares.h"
+//#import "Squares.h"
+#import "Intro.h"
 
-@implementation C4WorkSpace
+@implementation C4WorkSpace 
 {
     Squares *eightSquares;
     Seed *pinecone;
     CGPoint pineconeArcCenter;
+    Intro *intro;
 }
 
 -(void)setup {
-    int x = 75;
+    
+    int x=75;
 
-    eightSquares = [[Squares alloc] initWithFrame:CGRectMake(25,25,8*x,13*x)];
-    eightSquares.strokeColor = [UIColor clearColor];
-    [eightSquares addGesture:TAP name:@"tapGesture" action:@"testSquares"];
+    CGPoint center;
+    center.x = self.canvas.center.x;
+    center.y = self.canvas.center.y;
+    center.y = self.canvas.height/2;
+    center.x = self.canvas.width/2;
+    
+    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*x, 13*x)];
+    intro.center = center;
+    [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
+    
+    eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*x,13*x)];
+    eightSquares.center = center;
+    [eightSquares addGesture:TAP name:@"tapGesture" action:@"endEightSquares"];
+    eightSquares.squaresDelegate = self;
     
     pinecone = [[Seed alloc] initWithFrame:CGRectMake(140, 140, 400, 400)];
     pinecone.strokeColor = [UIColor clearColor];
     pinecone.fillColor = [UIColor colorWithRed:0.8118f green:0.8314f blue:0.7373f alpha:1.0f];
     [pinecone addGesture:TAP name:@"tappedGesture" action:@"updateControl5"];
-        
+    
+    
+    /*
     //create a custom font
     C4Font *bottomFont = [C4Font fontWithName:@"Futura" size:20.0f];
     
@@ -40,11 +56,19 @@
     bottomLabel.center = CGPointMake(9*x,self.canvas.height/2);
     bottomLabel.transform = CGAffineTransformMakeRotation( -M_PI/2);
     bottomLabel.numberOfLines = 3;
-    
+    */
 
     [self.canvas addShape:eightSquares];
-    [self.canvas addLabel:bottomLabel];
-    [self.canvas addShape:pinecone];
+    //[self.canvas addLabel:bottomLabel];
+    //[self.canvas addShape:pinecone];
+    [self.canvas addShape:intro];
+     
+    
+}
+
+-(void)startPinecone
+{
+    C4Log(@"delegateworking");
 }
 
 
