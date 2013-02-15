@@ -10,6 +10,6 @@
 
 @interface Seed : C4Shape
 
--(void)updateControl5;
+-(void)tapPinecone;
 
 @end

@@ -40,8 +40,9 @@
     
     pinecone = [[Seed alloc] initWithFrame:CGRectMake(140, 140, 400, 400)];
     pinecone.strokeColor = [UIColor clearColor];
-    pinecone.fillColor = [UIColor colorWithRed:0.8118f green:0.8314f blue:0.7373f alpha:1.0f];
-    [pinecone addGesture:TAP name:@"tappedGesture" action:@"updateControl5"];
+    pinecone.fillColor = [UIColor whiteColor];
+    pinecone.center = center;
+    [pinecone addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
     
     
     /*
@@ -60,7 +61,6 @@
 
     [self.canvas addShape:eightSquares];
     //[self.canvas addLabel:bottomLabel];
-    //[self.canvas addShape:pinecone];
     [self.canvas addShape:intro];
      
     
@@ -69,8 +69,7 @@
 -(void)startPinecone
 {
     C4Log(@"delegateworking");
+    [self.canvas addShape:pinecone];
 }
-
-
 
 @end
