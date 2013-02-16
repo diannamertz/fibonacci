@@ -7,9 +7,16 @@
 //
 
 #import "C4Shape.h"
+@class Intro;
+
+@protocol IntroDelegate <NSObject>
+-(void)startEightSquares;
+@end
 
 @interface Intro : C4Shape
 
--(void)endIntro;
+@property (nonatomic, assign) id<IntroDelegate> introDelegate;
 
+-(void)endIntro;
+-(void)endIntro2;
 @end

@@ -15,8 +15,9 @@
  */
 
 #import "Squares.h"
+#import "Intro.h"
 
-@interface C4WorkSpace : C4CanvasController <SquaresDelegate>
+@interface C4WorkSpace : C4CanvasController <SquaresDelegate, IntroDelegate>
 
 
 @end

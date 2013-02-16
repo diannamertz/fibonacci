@@ -8,8 +8,6 @@
 
 #import "C4Workspace.h"
 #import "Seed.h"
-//#import "Squares.h"
-#import "Intro.h"
 
 @implementation C4WorkSpace 
 {
@@ -31,9 +29,14 @@
     
     intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*x, 13*x)];
     intro.center = center;
+    intro.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
+    intro.strokeColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
+    intro.introDelegate = self;
     
     eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*x,13*x)];
+    eightSquares.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
+    eightSquares.strokeColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
     eightSquares.center = center;
     [eightSquares addGesture:TAP name:@"tapGesture" action:@"endEightSquares"];
     eightSquares.squaresDelegate = self;
@@ -44,26 +47,13 @@
     pinecone.center = center;
     [pinecone addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
     
-    
-    /*
-    //create a custom font
-    C4Font *bottomFont = [C4Font fontWithName:@"Futura" size:20.0f];
-    
-    //creates a label with the custom font, and a specific frame size for the label
-    C4Label *bottomLabel = [C4Label labelWithText:@"Pine cones grow from a tiny group of cells at the tip of a growing pine tree, called the Meristem. New cells are only formed here. Nature packs the seeds in the spiral pattern so as to optimize efficiency. The angle of turn for each new cell is 137.5°." font:bottomFont frame:CGRectMake(0,0,13*x,100)];
-    
-    bottomLabel.backgroundColor = [UIColor clearColor];
-    bottomLabel.textAlignment = ALIGNTEXTCENTER;
-    bottomLabel.center = CGPointMake(9*x,self.canvas.height/2);
-    bottomLabel.transform = CGAffineTransformMakeRotation( -M_PI/2);
-    bottomLabel.numberOfLines = 3;
-    */
-
-    [self.canvas addShape:eightSquares];
-    //[self.canvas addLabel:bottomLabel];
     [self.canvas addShape:intro];
-     
-    
+}
+
+-(void)startEightSquares
+{
+    C4Log(@"startEightSquares");
+    [self.canvas addShape:eightSquares];
 }
 
 -(void)startPinecone

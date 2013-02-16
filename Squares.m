@@ -15,8 +15,6 @@
     C4Label *labelAll;
 }
 
-//@synthesize squaresDelegate;
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
