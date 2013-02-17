@@ -19,6 +19,12 @@
 
 -(void)touchesBegan;
 -(void)touchesEnded;
+-(void)addSquare;
+-(void)addSquareOne;
+-(void)addSquareTwo;
+-(void)addSquareThree;
+-(void)addSquareFive;
+-(void)addSquareEight;
 -(void)endEightSquares;
 
 @end

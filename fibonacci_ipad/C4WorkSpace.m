@@ -17,8 +17,8 @@
     Intro *intro;
 }
 
--(void)setup {
-    
+-(void)setup
+{
     int x=75;
 
     CGPoint center;
@@ -35,8 +35,8 @@
     intro.introDelegate = self;
     
     eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*x,13*x)];
-    eightSquares.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
-    eightSquares.strokeColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
+    eightSquares.fillColor = [UIColor whiteColor];
+    eightSquares.strokeColor = [UIColor whiteColor];
     eightSquares.center = center;
     [eightSquares addGesture:TAP name:@"tapGesture" action:@"endEightSquares"];
     eightSquares.squaresDelegate = self;
@@ -52,7 +52,8 @@
 
 -(void)startEightSquares
 {
-    C4Log(@"startEightSquares");
+    eightSquares.fillColor = [UIColor whiteColor];
+    eightSquares.strokeColor = [UIColor whiteColor];
     [self.canvas addShape:eightSquares];
 }
 

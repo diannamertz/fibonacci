@@ -19,6 +19,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self setup];
         [self rect:frame];
     }
     return self;
