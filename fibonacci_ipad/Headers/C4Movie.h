@@ -17,10 +17,7 @@
  A C4Movie's resizing behaviour is to map itself to the edges of its visible frame. This functionality implicitly uses  AVLayerVideoGravityResize as its layer's default gravity. You can change the frame of the movie from an arbitrary shape back to its original proportion by using its originalMovieSize, originalMovieRatio, or by independently setting either its width or height properties.
  */
 
-@interface C4Movie : C4Control {
-    NSURL *movieURL;
-    void *rateContext, *currentItemContext, *playerItemStatusContext;
-}
+@interface C4Movie : C4Control 
 /**Creates and returns a new C4Movie object with a given file name.
 
  This method will set the frame of the returned object to that of the file's original size.
@@ -53,7 +50,7 @@
  @param movieName The filename of a video located in the application's main bundle.
  @param movieFrame The frame for the new movie
  */
--(id)initWithMovieName:(NSString *)movieName andFrame:(CGRect)movieFrame;
+-(id)initWithMovieName:(NSString *)movieName frame:(CGRect)movieFrame;
 
 /**Starts playing the movie.
  
@@ -112,7 +109,7 @@
  
  Setting to 0.0f is like calling pause.
  */
-@property (nonatomic) CGFloat rate;
+@property (readwrite, nonatomic) CGFloat rate;
 
 /**The width of the movie.
  
@@ -155,4 +152,22 @@
 /**Specifies the size of the movie. Animatable.
  */
 @property (readwrite, nonatomic) CGSize size;
+
+#pragma mark New Stuff
++(C4Movie *)movieWithURL:(NSString *)url;
++(C4Movie *)movieWithURL:(NSString *)url frame:(CGRect)movieFrame;
++(C4Movie *)movieWithYouTubeURL:(NSString *)youtubeURL;
++(C4Movie *)movieWithYouTubeURL:(NSString *)youtubeURL size:(C4YouTubeSize)movieSize;
++(C4Movie *)movieWithYouTubeURL:(NSString *)youtubeURL frame:(CGRect)movieFrame;
++(C4Movie *)movieWithYouTubeURL:(NSString *)youtubeURL size:(C4YouTubeSize)movieSize frame:(CGRect)movieFrame;
+
+-(id)initWithYouTubeURL:(NSString *)movieURL;
+-(id)initWithYouTubeURL:(NSString *)movieURL size:(C4YouTubeSize)movieSize;
+-(id)initWithYouTubeURL:(NSString *)movieURL size:(C4YouTubeSize)movieSize frame:(CGRect)movieFrame;
+-(id)initWithYouTubeURL:(NSString *)movieURL frame:(CGRect)movieFrame;
+-(id)initWithURL:(NSURL *)movieURL;
+-(id)initWithURL:(NSURL *)movieURL frame:(CGRect)movieFrame;
++(C4Movie *)defaultStyle;
+@property (readwrite, atomic) BOOL constrainsProportions;
+
 @end

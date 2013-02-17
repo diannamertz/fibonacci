@@ -23,6 +23,7 @@
     introBackground = [C4Shape rect:CGRectMake(0, 0, 8*x, 13*x)];
     introBackground.strokeColor = [UIColor clearColor];
     introBackground.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(50)];
+    //introBackground.transform = CGAffineTransformMakeRotation( -M_PI/2);
     CGPoint center;
     center.x = self.center.x;
     center.y = self.center.y;

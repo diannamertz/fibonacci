@@ -7,7 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		601C84AD16C687C100E996E4 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 601C84AC16C687C100E996E4 /* Squares.m */; };
+		6050716116D15D09000AF387 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710916D15C31000AF387 /* Squares.m */; };
+		6050716216D15D47000AF387 /* C4AssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710C16D15C49000AF387 /* C4AssertionHandler.m */; };
+		6050716316D15D4E000AF387 /* C4Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710E16D15C49000AF387 /* C4Button.m */; };
+		6050716416D15D55000AF387 /* C4Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711016D15C49000AF387 /* C4Camera.m */; };
+		6050716516D15D5E000AF387 /* C4CameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711216D15C49000AF387 /* C4CameraController.m */; };
+		6050716616D15D6E000AF387 /* C4CameraLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711416D15C49000AF387 /* C4CameraLayer.m */; };
+		6050716716D15D7F000AF387 /* C4CanvasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711616D15C49000AF387 /* C4CanvasController.m */; };
+		6050716816D15D86000AF387 /* C4Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711916D15C49000AF387 /* C4Control.m */; };
+		6050716916D15D8E000AF387 /* C4Defines.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711B16D15C49000AF387 /* C4Defines.m */; };
+		6050716A16D15D93000AF387 /* C4EAGLES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050711D16D15C49000AF387 /* C4EAGLES1Renderer.m */; };
+		6050716B16D15D99000AF387 /* C4EAGLLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712016D15C49000AF387 /* C4EAGLLayer.m */; };
+		6050716C16D15D9F000AF387 /* C4Font.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712216D15C49000AF387 /* C4Font.m */; };
+		6050716D16D15DA8000AF387 /* C4Foundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712416D15C49000AF387 /* C4Foundation.m */; };
+		6050716E16D15DAF000AF387 /* C4GL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712716D15C49000AF387 /* C4GL.m */; };
+		6050716F16D15DB4000AF387 /* C4GL1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712916D15C49000AF387 /* C4GL1Renderer.m */; };
+		6050717016D15DB9000AF387 /* C4Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712B16D15C49000AF387 /* C4Image.m */; };
+		6050717116D15DC1000AF387 /* C4Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050712E16D15C49000AF387 /* C4Label.m */; };
+		6050717216D15DC6000AF387 /* C4Layer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713016D15C49000AF387 /* C4Layer.m */; };
+		6050717316D15DCB000AF387 /* C4Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713316D15C49000AF387 /* C4Math.m */; };
+		6050717416D15DD2000AF387 /* C4Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713616D15C49000AF387 /* C4Movie.m */; };
+		6050717516D15DD9000AF387 /* C4MovieLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713816D15C49000AF387 /* C4MovieLayer.m */; };
+		6050717616D15DDF000AF387 /* C4Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713B16D15C49000AF387 /* C4Object.m */; };
+		6050717716D15DE4000AF387 /* C4Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050713E16D15C49000AF387 /* C4Sample.m */; };
+		6050717816D15DF5000AF387 /* OuterShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715F16D15C49000AF387 /* OuterShape.m */; };
+		6050717916D15DFE000AF387 /* C4Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714016D15C49000AF387 /* C4Shape.m */; };
+		6050717A16D15E03000AF387 /* C4ShapeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714216D15C49000AF387 /* C4ShapeLayer.m */; };
+		6050717B16D15E08000AF387 /* C4Slider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714416D15C49000AF387 /* C4Slider.m */; };
+		6050717C16D15E0D000AF387 /* C4Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714616D15C49000AF387 /* C4Timer.m */; };
+		6050717D16D15E15000AF387 /* C4TransformableControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714816D15C49000AF387 /* C4TransformableControl.m */; };
+		6050717E16D15E1B000AF387 /* C4TransformLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714A16D15C49000AF387 /* C4TransformLayer.m */; };
+		6050717F16D15E20000AF387 /* C4Vector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714C16D15C49000AF387 /* C4Vector.m */; };
+		6050718016D15E27000AF387 /* C4View.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050714E16D15C49000AF387 /* C4View.m */; };
+		6050718116D15E2D000AF387 /* C4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715016D15C49000AF387 /* C4ViewController.m */; };
+		6050718216D15E34000AF387 /* C4Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715316D15C49000AF387 /* C4Window.m */; };
+		6050718416D15E44000AF387 /* C4YouTubeURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715716D15C49000AF387 /* C4YouTubeURLParser.m */; };
+		6050718516D15E49000AF387 /* HiddenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715A16D15C49000AF387 /* HiddenNav.m */; };
+		6050718616D15E50000AF387 /* HiddenNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715D16D15C49000AF387 /* HiddenNavView.m */; };
 		6076B3A716CCF2A400D13431 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6076B3A616CCF2A400D13431 /* Intro.m */; };
 		60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F0C6C016AEA1D40096B6DE /* Seed.m */; };
 		60F4531A169769E800686965 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45319169769E800686965 /* Accelerate.framework */; };
@@ -30,8 +66,92 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		601C84AB16C687C100E996E4 /* Squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Squares.h; path = ../Squares.h; sourceTree = "<group>"; };
-		601C84AC16C687C100E996E4 /* Squares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Squares.m; path = ../Squares.m; sourceTree = "<group>"; };
+		6050710816D15C31000AF387 /* Squares.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squares.h; sourceTree = "<group>"; };
+		6050710916D15C31000AF387 /* Squares.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Squares.m; sourceTree = "<group>"; };
+		6050710A16D15C49000AF387 /* C4AddSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AddSubview.h; path = Headers/C4AddSubview.h; sourceTree = "<group>"; };
+		6050710B16D15C49000AF387 /* C4AssertionHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AssertionHandler.h; path = Headers/C4AssertionHandler.h; sourceTree = "<group>"; };
+		6050710C16D15C49000AF387 /* C4AssertionHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4AssertionHandler.m; path = Headers/C4AssertionHandler.m; sourceTree = "<group>"; };
+		6050710D16D15C49000AF387 /* C4Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Button.h; path = Headers/C4Button.h; sourceTree = "<group>"; };
+		6050710E16D15C49000AF387 /* C4Button.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Button.m; path = Headers/C4Button.m; sourceTree = "<group>"; };
+		6050710F16D15C49000AF387 /* C4Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Camera.h; path = Headers/C4Camera.h; sourceTree = "<group>"; };
+		6050711016D15C49000AF387 /* C4Camera.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Camera.m; path = Headers/C4Camera.m; sourceTree = "<group>"; };
+		6050711116D15C49000AF387 /* C4CameraController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CameraController.h; path = Headers/C4CameraController.h; sourceTree = "<group>"; };
+		6050711216D15C49000AF387 /* C4CameraController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4CameraController.m; path = Headers/C4CameraController.m; sourceTree = "<group>"; };
+		6050711316D15C49000AF387 /* C4CameraLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CameraLayer.h; path = Headers/C4CameraLayer.h; sourceTree = "<group>"; };
+		6050711416D15C49000AF387 /* C4CameraLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4CameraLayer.m; path = Headers/C4CameraLayer.m; sourceTree = "<group>"; };
+		6050711516D15C49000AF387 /* C4CanvasController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CanvasController.h; path = Headers/C4CanvasController.h; sourceTree = "<group>"; };
+		6050711616D15C49000AF387 /* C4CanvasController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4CanvasController.m; path = Headers/C4CanvasController.m; sourceTree = "<group>"; };
+		6050711716D15C49000AF387 /* C4CaptureVideoPreviewLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4CaptureVideoPreviewLayer.h; path = Headers/C4CaptureVideoPreviewLayer.h; sourceTree = "<group>"; };
+		6050711816D15C49000AF387 /* C4Control.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Control.h; path = Headers/C4Control.h; sourceTree = "<group>"; };
+		6050711916D15C49000AF387 /* C4Control.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Control.m; path = Headers/C4Control.m; sourceTree = "<group>"; };
+		6050711A16D15C49000AF387 /* C4Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Defines.h; path = Headers/C4Defines.h; sourceTree = "<group>"; };
+		6050711B16D15C49000AF387 /* C4Defines.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Defines.m; path = Headers/C4Defines.m; sourceTree = "<group>"; };
+		6050711C16D15C49000AF387 /* C4EAGLES1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLES1Renderer.h; path = Headers/C4EAGLES1Renderer.h; sourceTree = "<group>"; };
+		6050711D16D15C49000AF387 /* C4EAGLES1Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4EAGLES1Renderer.m; path = Headers/C4EAGLES1Renderer.m; sourceTree = "<group>"; };
+		6050711E16D15C49000AF387 /* C4EAGLESRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLESRenderer.h; path = Headers/C4EAGLESRenderer.h; sourceTree = "<group>"; };
+		6050711F16D15C49000AF387 /* C4EAGLLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4EAGLLayer.h; path = Headers/C4EAGLLayer.h; sourceTree = "<group>"; };
+		6050712016D15C49000AF387 /* C4EAGLLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4EAGLLayer.m; path = Headers/C4EAGLLayer.m; sourceTree = "<group>"; };
+		6050712116D15C49000AF387 /* C4Font.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Font.h; path = Headers/C4Font.h; sourceTree = "<group>"; };
+		6050712216D15C49000AF387 /* C4Font.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Font.m; path = Headers/C4Font.m; sourceTree = "<group>"; };
+		6050712316D15C49000AF387 /* C4Foundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Foundation.h; path = Headers/C4Foundation.h; sourceTree = "<group>"; };
+		6050712416D15C49000AF387 /* C4Foundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Foundation.m; path = Headers/C4Foundation.m; sourceTree = "<group>"; };
+		6050712516D15C49000AF387 /* C4Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Gesture.h; path = Headers/C4Gesture.h; sourceTree = "<group>"; };
+		6050712616D15C49000AF387 /* C4GL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL.h; path = Headers/C4GL.h; sourceTree = "<group>"; };
+		6050712716D15C49000AF387 /* C4GL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4GL.m; path = Headers/C4GL.m; sourceTree = "<group>"; };
+		6050712816D15C49000AF387 /* C4GL1Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4GL1Renderer.h; path = Headers/C4GL1Renderer.h; sourceTree = "<group>"; };
+		6050712916D15C49000AF387 /* C4GL1Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4GL1Renderer.m; path = Headers/C4GL1Renderer.m; sourceTree = "<group>"; };
+		6050712A16D15C49000AF387 /* C4Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Image.h; path = Headers/C4Image.h; sourceTree = "<group>"; };
+		6050712B16D15C49000AF387 /* C4Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Image.m; path = Headers/C4Image.m; sourceTree = "<group>"; };
+		6050712C16D15C49000AF387 /* C4Imports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Imports.h; path = Headers/C4Imports.h; sourceTree = "<group>"; };
+		6050712D16D15C49000AF387 /* C4Label.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Label.h; path = Headers/C4Label.h; sourceTree = "<group>"; };
+		6050712E16D15C49000AF387 /* C4Label.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Label.m; path = Headers/C4Label.m; sourceTree = "<group>"; };
+		6050712F16D15C49000AF387 /* C4Layer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Layer.h; path = Headers/C4Layer.h; sourceTree = "<group>"; };
+		6050713016D15C49000AF387 /* C4Layer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Layer.m; path = Headers/C4Layer.m; sourceTree = "<group>"; };
+		6050713116D15C49000AF387 /* C4LayerAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4LayerAnimation.h; path = Headers/C4LayerAnimation.h; sourceTree = "<group>"; };
+		6050713216D15C49000AF387 /* C4Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Math.h; path = Headers/C4Math.h; sourceTree = "<group>"; };
+		6050713316D15C49000AF387 /* C4Math.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Math.m; path = Headers/C4Math.m; sourceTree = "<group>"; };
+		6050713416D15C49000AF387 /* C4MethodDelay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4MethodDelay.h; path = Headers/C4MethodDelay.h; sourceTree = "<group>"; };
+		6050713516D15C49000AF387 /* C4Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Movie.h; path = Headers/C4Movie.h; sourceTree = "<group>"; };
+		6050713616D15C49000AF387 /* C4Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Movie.m; path = Headers/C4Movie.m; sourceTree = "<group>"; };
+		6050713716D15C49000AF387 /* C4MovieLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4MovieLayer.h; path = Headers/C4MovieLayer.h; sourceTree = "<group>"; };
+		6050713816D15C49000AF387 /* C4MovieLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4MovieLayer.m; path = Headers/C4MovieLayer.m; sourceTree = "<group>"; };
+		6050713916D15C49000AF387 /* C4Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Notification.h; path = Headers/C4Notification.h; sourceTree = "<group>"; };
+		6050713A16D15C49000AF387 /* C4Object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Object.h; path = Headers/C4Object.h; sourceTree = "<group>"; };
+		6050713B16D15C49000AF387 /* C4Object.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Object.m; path = Headers/C4Object.m; sourceTree = "<group>"; };
+		6050713C16D15C49000AF387 /* C4PlayerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4PlayerLayer.h; path = Headers/C4PlayerLayer.h; sourceTree = "<group>"; };
+		6050713D16D15C49000AF387 /* C4Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Sample.h; path = Headers/C4Sample.h; sourceTree = "<group>"; };
+		6050713E16D15C49000AF387 /* C4Sample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Sample.m; path = Headers/C4Sample.m; sourceTree = "<group>"; };
+		6050713F16D15C49000AF387 /* C4Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Shape.h; path = Headers/C4Shape.h; sourceTree = "<group>"; };
+		6050714016D15C49000AF387 /* C4Shape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Shape.m; path = Headers/C4Shape.m; sourceTree = "<group>"; };
+		6050714116D15C49000AF387 /* C4ShapeLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ShapeLayer.h; path = Headers/C4ShapeLayer.h; sourceTree = "<group>"; };
+		6050714216D15C49000AF387 /* C4ShapeLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4ShapeLayer.m; path = Headers/C4ShapeLayer.m; sourceTree = "<group>"; };
+		6050714316D15C49000AF387 /* C4Slider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Slider.h; path = Headers/C4Slider.h; sourceTree = "<group>"; };
+		6050714416D15C49000AF387 /* C4Slider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Slider.m; path = Headers/C4Slider.m; sourceTree = "<group>"; };
+		6050714516D15C49000AF387 /* C4Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Timer.h; path = Headers/C4Timer.h; sourceTree = "<group>"; };
+		6050714616D15C49000AF387 /* C4Timer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Timer.m; path = Headers/C4Timer.m; sourceTree = "<group>"; };
+		6050714716D15C49000AF387 /* C4TransformableControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4TransformableControl.h; path = Headers/C4TransformableControl.h; sourceTree = "<group>"; };
+		6050714816D15C49000AF387 /* C4TransformableControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4TransformableControl.m; path = Headers/C4TransformableControl.m; sourceTree = "<group>"; };
+		6050714916D15C49000AF387 /* C4TransformLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4TransformLayer.h; path = Headers/C4TransformLayer.h; sourceTree = "<group>"; };
+		6050714A16D15C49000AF387 /* C4TransformLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4TransformLayer.m; path = Headers/C4TransformLayer.m; sourceTree = "<group>"; };
+		6050714B16D15C49000AF387 /* C4Vector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Vector.h; path = Headers/C4Vector.h; sourceTree = "<group>"; };
+		6050714C16D15C49000AF387 /* C4Vector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Vector.m; path = Headers/C4Vector.m; sourceTree = "<group>"; };
+		6050714D16D15C49000AF387 /* C4View.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4View.h; path = Headers/C4View.h; sourceTree = "<group>"; };
+		6050714E16D15C49000AF387 /* C4View.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4View.m; path = Headers/C4View.m; sourceTree = "<group>"; };
+		6050714F16D15C49000AF387 /* C4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4ViewController.h; path = Headers/C4ViewController.h; sourceTree = "<group>"; };
+		6050715016D15C49000AF387 /* C4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4ViewController.m; path = Headers/C4ViewController.m; sourceTree = "<group>"; };
+		6050715116D15C49000AF387 /* C4VisualObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4VisualObject.h; path = Headers/C4VisualObject.h; sourceTree = "<group>"; };
+		6050715216D15C49000AF387 /* C4Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4Window.h; path = Headers/C4Window.h; sourceTree = "<group>"; };
+		6050715316D15C49000AF387 /* C4Window.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4Window.m; path = Headers/C4Window.m; sourceTree = "<group>"; };
+		6050715616D15C49000AF387 /* C4YouTubeURLParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4YouTubeURLParser.h; path = Headers/C4YouTubeURLParser.h; sourceTree = "<group>"; };
+		6050715716D15C49000AF387 /* C4YouTubeURLParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = C4YouTubeURLParser.m; path = Headers/C4YouTubeURLParser.m; sourceTree = "<group>"; };
+		6050715916D15C49000AF387 /* HiddenNav.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HiddenNav.h; path = Headers/HiddenNav.h; sourceTree = "<group>"; };
+		6050715A16D15C49000AF387 /* HiddenNav.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HiddenNav.m; path = Headers/HiddenNav.m; sourceTree = "<group>"; };
+		6050715B16D15C49000AF387 /* HiddenNav.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HiddenNav.xib; path = Headers/HiddenNav.xib; sourceTree = "<group>"; };
+		6050715C16D15C49000AF387 /* HiddenNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HiddenNavView.h; path = Headers/HiddenNavView.h; sourceTree = "<group>"; };
+		6050715D16D15C49000AF387 /* HiddenNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HiddenNavView.m; path = Headers/HiddenNavView.m; sourceTree = "<group>"; };
+		6050715E16D15C49000AF387 /* OuterShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OuterShape.h; path = Headers/OuterShape.h; sourceTree = "<group>"; };
+		6050715F16D15C49000AF387 /* OuterShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OuterShape.m; path = Headers/OuterShape.m; sourceTree = "<group>"; };
+		6050716016D15C49000AF387 /* UITouch+C4Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITouch+C4Touch.h"; path = "Headers/UITouch+C4Touch.h"; sourceTree = "<group>"; };
 		6076B3A516CCF2A400D13431 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		6076B3A616CCF2A400D13431 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		60F0C6BF16AEA1D40096B6DE /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
@@ -118,6 +238,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6050715816D15C49000AF387 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = en.lproj;
+			path = Headers/en.lproj;
+			sourceTree = "<group>";
+		};
 		60F4530A169769E800686965 = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +289,8 @@
 				6076B3A616CCF2A400D13431 /* Intro.m */,
 				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
 				60F0C6C016AEA1D40096B6DE /* Seed.m */,
-				601C84AB16C687C100E996E4 /* Squares.h */,
-				601C84AC16C687C100E996E4 /* Squares.m */,
+				6050710816D15C31000AF387 /* Squares.h */,
+				6050710916D15C31000AF387 /* Squares.m */,
 				60F4533E169769E800686965 /* Framework */,
 				60F45330169769E800686965 /* Supporting Files */,
 			);
@@ -187,6 +315,91 @@
 		60F4533E169769E800686965 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				6050710A16D15C49000AF387 /* C4AddSubview.h */,
+				6050710B16D15C49000AF387 /* C4AssertionHandler.h */,
+				6050710C16D15C49000AF387 /* C4AssertionHandler.m */,
+				6050710D16D15C49000AF387 /* C4Button.h */,
+				6050710E16D15C49000AF387 /* C4Button.m */,
+				6050710F16D15C49000AF387 /* C4Camera.h */,
+				6050711016D15C49000AF387 /* C4Camera.m */,
+				6050711116D15C49000AF387 /* C4CameraController.h */,
+				6050711216D15C49000AF387 /* C4CameraController.m */,
+				6050711316D15C49000AF387 /* C4CameraLayer.h */,
+				6050711416D15C49000AF387 /* C4CameraLayer.m */,
+				6050711516D15C49000AF387 /* C4CanvasController.h */,
+				6050711616D15C49000AF387 /* C4CanvasController.m */,
+				6050711716D15C49000AF387 /* C4CaptureVideoPreviewLayer.h */,
+				6050711816D15C49000AF387 /* C4Control.h */,
+				6050711916D15C49000AF387 /* C4Control.m */,
+				6050711A16D15C49000AF387 /* C4Defines.h */,
+				6050711B16D15C49000AF387 /* C4Defines.m */,
+				6050711C16D15C49000AF387 /* C4EAGLES1Renderer.h */,
+				6050711D16D15C49000AF387 /* C4EAGLES1Renderer.m */,
+				6050711E16D15C49000AF387 /* C4EAGLESRenderer.h */,
+				6050711F16D15C49000AF387 /* C4EAGLLayer.h */,
+				6050712016D15C49000AF387 /* C4EAGLLayer.m */,
+				6050712116D15C49000AF387 /* C4Font.h */,
+				6050712216D15C49000AF387 /* C4Font.m */,
+				6050712316D15C49000AF387 /* C4Foundation.h */,
+				6050712416D15C49000AF387 /* C4Foundation.m */,
+				6050712516D15C49000AF387 /* C4Gesture.h */,
+				6050712616D15C49000AF387 /* C4GL.h */,
+				6050712716D15C49000AF387 /* C4GL.m */,
+				6050712816D15C49000AF387 /* C4GL1Renderer.h */,
+				6050712916D15C49000AF387 /* C4GL1Renderer.m */,
+				6050712A16D15C49000AF387 /* C4Image.h */,
+				6050712B16D15C49000AF387 /* C4Image.m */,
+				6050712C16D15C49000AF387 /* C4Imports.h */,
+				6050712D16D15C49000AF387 /* C4Label.h */,
+				6050712E16D15C49000AF387 /* C4Label.m */,
+				6050712F16D15C49000AF387 /* C4Layer.h */,
+				6050713016D15C49000AF387 /* C4Layer.m */,
+				6050713116D15C49000AF387 /* C4LayerAnimation.h */,
+				6050713216D15C49000AF387 /* C4Math.h */,
+				6050713316D15C49000AF387 /* C4Math.m */,
+				6050713416D15C49000AF387 /* C4MethodDelay.h */,
+				6050713516D15C49000AF387 /* C4Movie.h */,
+				6050713616D15C49000AF387 /* C4Movie.m */,
+				6050713716D15C49000AF387 /* C4MovieLayer.h */,
+				6050713816D15C49000AF387 /* C4MovieLayer.m */,
+				6050713916D15C49000AF387 /* C4Notification.h */,
+				6050713A16D15C49000AF387 /* C4Object.h */,
+				6050713B16D15C49000AF387 /* C4Object.m */,
+				6050713C16D15C49000AF387 /* C4PlayerLayer.h */,
+				6050713D16D15C49000AF387 /* C4Sample.h */,
+				6050713E16D15C49000AF387 /* C4Sample.m */,
+				6050713F16D15C49000AF387 /* C4Shape.h */,
+				6050714016D15C49000AF387 /* C4Shape.m */,
+				6050714116D15C49000AF387 /* C4ShapeLayer.h */,
+				6050714216D15C49000AF387 /* C4ShapeLayer.m */,
+				6050714316D15C49000AF387 /* C4Slider.h */,
+				6050714416D15C49000AF387 /* C4Slider.m */,
+				6050714516D15C49000AF387 /* C4Timer.h */,
+				6050714616D15C49000AF387 /* C4Timer.m */,
+				6050714716D15C49000AF387 /* C4TransformableControl.h */,
+				6050714816D15C49000AF387 /* C4TransformableControl.m */,
+				6050714916D15C49000AF387 /* C4TransformLayer.h */,
+				6050714A16D15C49000AF387 /* C4TransformLayer.m */,
+				6050714B16D15C49000AF387 /* C4Vector.h */,
+				6050714C16D15C49000AF387 /* C4Vector.m */,
+				6050714D16D15C49000AF387 /* C4View.h */,
+				6050714E16D15C49000AF387 /* C4View.m */,
+				6050714F16D15C49000AF387 /* C4ViewController.h */,
+				6050715016D15C49000AF387 /* C4ViewController.m */,
+				6050715116D15C49000AF387 /* C4VisualObject.h */,
+				6050715216D15C49000AF387 /* C4Window.h */,
+				6050715316D15C49000AF387 /* C4Window.m */,
+				6050715616D15C49000AF387 /* C4YouTubeURLParser.h */,
+				6050715716D15C49000AF387 /* C4YouTubeURLParser.m */,
+				6050715816D15C49000AF387 /* en.lproj */,
+				6050715916D15C49000AF387 /* HiddenNav.h */,
+				6050715A16D15C49000AF387 /* HiddenNav.m */,
+				6050715B16D15C49000AF387 /* HiddenNav.xib */,
+				6050715C16D15C49000AF387 /* HiddenNavView.h */,
+				6050715D16D15C49000AF387 /* HiddenNavView.m */,
+				6050715E16D15C49000AF387 /* OuterShape.h */,
+				6050715F16D15C49000AF387 /* OuterShape.m */,
+				6050716016D15C49000AF387 /* UITouch+C4Touch.h */,
 				60F4533F169769E800686965 /* C4AddSubview.h */,
 				60F45340169769E800686965 /* C4AssertionHandler.h */,
 				60F45341169769E800686965 /* C4Camera.h */,
@@ -290,11 +503,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6050718616D15E50000AF387 /* HiddenNavView.m in Sources */,
+				6050718516D15E49000AF387 /* HiddenNav.m in Sources */,
+				6050718416D15E44000AF387 /* C4YouTubeURLParser.m in Sources */,
+				6050718216D15E34000AF387 /* C4Window.m in Sources */,
+				6050718116D15E2D000AF387 /* C4ViewController.m in Sources */,
+				6050718016D15E27000AF387 /* C4View.m in Sources */,
+				6050717F16D15E20000AF387 /* C4Vector.m in Sources */,
+				6050717E16D15E1B000AF387 /* C4TransformLayer.m in Sources */,
+				6050717D16D15E15000AF387 /* C4TransformableControl.m in Sources */,
+				6050717C16D15E0D000AF387 /* C4Timer.m in Sources */,
+				6050717B16D15E08000AF387 /* C4Slider.m in Sources */,
+				6050717A16D15E03000AF387 /* C4ShapeLayer.m in Sources */,
+				6050717916D15DFE000AF387 /* C4Shape.m in Sources */,
+				6050717816D15DF5000AF387 /* OuterShape.m in Sources */,
+				6050717716D15DE4000AF387 /* C4Sample.m in Sources */,
+				6050717616D15DDF000AF387 /* C4Object.m in Sources */,
+				6050717516D15DD9000AF387 /* C4MovieLayer.m in Sources */,
+				6050717416D15DD2000AF387 /* C4Movie.m in Sources */,
+				6050717316D15DCB000AF387 /* C4Math.m in Sources */,
+				6050717216D15DC6000AF387 /* C4Layer.m in Sources */,
+				6050717116D15DC1000AF387 /* C4Label.m in Sources */,
+				6050717016D15DB9000AF387 /* C4Image.m in Sources */,
+				6050716F16D15DB4000AF387 /* C4GL1Renderer.m in Sources */,
+				6050716E16D15DAF000AF387 /* C4GL.m in Sources */,
+				6050716D16D15DA8000AF387 /* C4Foundation.m in Sources */,
+				6050716C16D15D9F000AF387 /* C4Font.m in Sources */,
+				6050716B16D15D99000AF387 /* C4EAGLLayer.m in Sources */,
+				6050716A16D15D93000AF387 /* C4EAGLES1Renderer.m in Sources */,
+				6050716916D15D8E000AF387 /* C4Defines.m in Sources */,
+				6050716816D15D86000AF387 /* C4Control.m in Sources */,
+				6050716716D15D7F000AF387 /* C4CanvasController.m in Sources */,
+				6050716616D15D6E000AF387 /* C4CameraLayer.m in Sources */,
+				6050716516D15D5E000AF387 /* C4CameraController.m in Sources */,
+				6050716416D15D55000AF387 /* C4Camera.m in Sources */,
+				6050716316D15D4E000AF387 /* C4Button.m in Sources */,
+				6050716216D15D47000AF387 /* C4AssertionHandler.m in Sources */,
+				6050716116D15D09000AF387 /* Squares.m in Sources */,
 				60F45336169769E800686965 /* main.m in Sources */,
 				60F4533B169769E800686965 /* C4AppDelegate.m in Sources */,
 				60F4533D169769E800686965 /* C4WorkSpace.m in Sources */,
 				60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */,
-				601C84AD16C687C100E996E4 /* Squares.m in Sources */,
 				6076B3A716CCF2A400D13431 /* Intro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

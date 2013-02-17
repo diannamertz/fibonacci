@@ -29,6 +29,7 @@
     
     intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*x, 13*x)];
     intro.center = center;
+    //intro.transform = CGAffineTransformMakeRotation( -M_PI/2);
     intro.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
     intro.strokeColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];

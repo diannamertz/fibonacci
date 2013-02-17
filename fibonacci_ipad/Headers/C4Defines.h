@@ -6,6 +6,8 @@
 //  Copyright (c) 2011 mediart. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 #ifndef C4iOSDevelopment_C4Defines_h
 #define C4iOSDevelopment_C4Defines_h
 
@@ -22,10 +24,11 @@ lineNumber:__LINE__ description:(desc), ##__VA_ARGS__]; \
 
 /* NOT SUPPOSED TO USE #DEFINES, BUT HERE WE DON'T WANT PEOPLE TO CHANGE THE VALUE OF THESE VARIABLES */
 #ifndef C4_DEFAULT_COLORS
-#define C4RED [UIColor colorWithRed:1.0f green:0.10f blue:0.10f alpha:1.0f]
-#define C4BLUE [UIColor colorWithRed:0.043f green:0.627f blue:0.902f alpha:1.0f]
-#define C4GREY [UIColor colorWithRed:0.196 green:0.216 blue:0.236 alpha:1.0f];
+#define C4RED (UIColor *)[UIColor colorWithRed:1.0f green:0.10f blue:0.10f alpha:1.0f]
+#define C4BLUE (UIColor *)[UIColor colorWithRed:0.043f green:0.627f blue:0.902f alpha:1.0f]
+#define C4GREY (UIColor *)[UIColor colorWithRed:0.196f green:0.216f blue:0.236f alpha:1.0f]
 #endif
+
 
 #ifndef C4_DEFAULT_FONTNAMES
 #define SYSTEMFONTNAME [[UIFont systemFontOfSize:12.0f] fontName]
@@ -46,7 +49,7 @@ C4_EXTERN BOOL VERBOSELOAD;
 /* more lexical names for common mathematic variables, e.g. QUARTER_PI instead of M_PI_4 */
 C4_EXTERN const CGFloat QUARTER_PI, HALF_PI, PI, TWO_PI, ONE_OVER_PI, TWO_OVER_PI, TWO_OVER_ROOT_PI, E, LOG2E, LOG10E, LN2, LN10, SQRT_TWO, SQRT_ONE_OVER_TWO;
 
-enum {
+typedef enum C4AnimationOptions : NSUInteger {
     
     ALLOWSINTERACTION = UIViewAnimationOptionAllowUserInteraction,
     BEGINCURRENT = UIViewAnimationOptionBeginFromCurrentState,
@@ -75,10 +78,10 @@ enum {
 //    UIViewAnimationOptionTransitionFlipFromTop     = 6 << 20,
 //    UIViewAnimationOptionTransitionFlipFromBottom  = 7 << 20,
     DEFAULT = 0 | UIViewAnimationOptionBeginFromCurrentState,
-};
-typedef NSUInteger C4AnimationOptions;
+} C4AnimationOptions;
 
-enum {
+
+typedef enum C4ShapeLayerAnimationType : NSUInteger {
     PATH = 0,
     FILLCOLOR,
     LINEDASHPHASE,
@@ -87,18 +90,16 @@ enum {
     STROKECOLOR,
     STROKEEND,
     STROKESTART
-};
-typedef NSUInteger C4ShapeLayerAnimationType;
+} C4ShapeLayerAnimationType;
 
-enum {		
-    LABELWORDWRAP = NSLineBreakByWordWrapping,
-    LABELCHARWRAP = NSLineBreakByCharWrapping,
-    LABELCLIP = NSLineBreakByClipping,
-    LABELTRUNCATEHEAD = NSLineBreakByTruncatingHead,
-    LABELTRUNCATETAIL = NSLineBreakByTruncatingTail,
-    LABELTRUNCATEMIDDLE = NSLineBreakByTruncatingMiddle,
-};
-typedef NSUInteger C4LineBreakMode;
+typedef enum C4LineBreakMode : NSUInteger {
+    LABELWORDWRAP = 0,
+    LABELCHARWRAP,
+    LABELCLIP,
+    LABELTRUNCATEHEAD,
+    LABELTRUNCATETAIL,
+    LABELTRUNCATEMIDDLE
+} C4LineBreakMode;
 
 C4_EXTERN NSString * const TRUNCATENONE;
 C4_EXTERN NSString * const TRUNCATESTART;
@@ -113,19 +114,67 @@ C4_EXTERN NSString * const ALIGNRIGHT;
 C4_EXTERN NSString * const ALIGNCENTER;
 C4_EXTERN NSString * const ALIGNJUSTIFIED;
 
-enum {
-    ALIGNTEXTLEFT = NSTextAlignmentLeft,
-    ALIGNTEXTCENTER = NSTextAlignmentCenter,
-    ALIGNTEXTRIGHT = NSTextAlignmentRight 
-};
-typedef NSUInteger C4TextAlignment;
+typedef enum C4TextAlignment : NSUInteger {
+    ALIGNTEXTLEFT = 0,
+    ALIGNTEXTCENTER,
+    ALIGNTEXTRIGHT
+} C4TextAlignment;
 
-enum { 
+typedef enum C4BaselineAdjustment : NSUInteger {
     ALIGNBASELINES = UIBaselineAdjustmentAlignBaselines, 
     ALIGNBASELINECENTERS = UIBaselineAdjustmentAlignCenters, 
     ALIGNBASELINENONE = UIBaselineAdjustmentNone
-};
-typedef NSUInteger C4BaselineAdjustment;
+} C4BaselineAdjustment;
+
+typedef enum C4YouTubeSize : NSUInteger{
+    YTSMALL = 0,
+    YTMEDIUM,
+    YT720,
+    YT1080
+} C4YouTubeSize;
+
+typedef enum C4ControlEvents : NSUInteger {
+    TOUCHDOWN           = 1 <<  0,      // on all touch downs
+    TOUCHDOWNREPEAT     = 1 <<  1,      // on multiple touchdowns (tap count > 1)
+    TOUCHDOWNDRAGINSIDE     = 1 <<  2,
+    TOUCHDOWNDRAGOUTSIDE    = 1 <<  3,
+    TOUCHDOWNDRAGENTER      = 1 <<  4,
+    TOUCHDOWNDRAGEXIT       = 1 <<  5,
+    TOUCHUPINSIDE       = 1 <<  6,
+    TOUCHUPOUTSIDE      = 1 <<  7,
+    TOUCHCANCEL         = 1 <<  8,
+    
+    VALUECHANGED        = 1 << 12,     // sliders, etc.
+    
+    EDITINGDIDBEGIN     = 1 << 16,     // UITextField
+    EDITINGCHANGED      = 1 << 17,
+    EDITINGDIDEND       = 1 << 18,
+    EDITINGDIDENDONEXIT = 1 << 19,     // 'return key' ending editing
+    
+    ALLTOUCHEVENTS      = 0x00000FFF,  // for touch events
+    ALLEDITINGEVENTS    = 0x000F0000,  // for UITextField
+} C4ControlEvents;
+
+typedef enum C4ControlState : NSUInteger {
+    NORMAL       = UIControlStateNormal,
+    HIGHLIGHTED  = 1 << 0,
+    DISABLED     = 1 << 1,
+    SELECTED     = 1 << 2
+} C4ControlState;
+
+typedef enum C4ControlContentHorizontalAlignment : NSUInteger {
+    HORIZONTALALIGNCENTER = 0,
+    HORIZONTALALIGNLEFT    = 1,
+    HORIZONTALALIGNRIGHT = 2,
+    HORIZONTALALIGNFILL   = 3,
+} C4ControlContentHorizontalAlignment;
+
+typedef enum C4ControlVerticalAlignment : NSUInteger {
+    VERTICALALIGNCENTER = 0,
+    VERTICALALIGNLEFT    = 1,
+    VERTICALALIGNRIGHT = 2,
+    VERTICALALIGNFILL   = 3,
+} C4ControlContentVerticalAlignment;
 
 /* `fillRule' values. */
 

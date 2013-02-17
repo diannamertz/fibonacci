@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 POSTFL. All rights reserved.
 //
 
-enum {
+typedef enum C4GestureType : NSUInteger {
     TAP = 0,
     PINCH,
     SWIPERIGHT,
@@ -16,16 +16,14 @@ enum {
     ROTATION,
     PAN,
     LONGPRESS
-};
-typedef NSUInteger C4GestureType;
+} C4GestureType;
 
-enum {
+typedef enum C4SwipeDirection : UISwipeGestureRecognizerDirection {
     SWIPEDIRRIGHT = UISwipeGestureRecognizerDirectionRight,
     SWIPEDIRLEFT = UISwipeGestureRecognizerDirectionLeft,
     SWIPEDIRUP = UISwipeGestureRecognizerDirectionUp ,
     SWIPEDIRDOWN = UISwipeGestureRecognizerDirectionDown
-};
-typedef UISwipeGestureRecognizerDirection C4SwipeDirection;
+} C4SwipeDirection;
 
 #import <Foundation/Foundation.h>
 
@@ -140,13 +138,21 @@ typedef UISwipeGestureRecognizerDirection C4SwipeDirection;
  */
 -(void)touchesMoved;
 
-/** Method which is called each time an object receives a long press
+/** Default method which is called each time an object receives a long press
  
  This method can be overridden to trigger other custom actions or events.
  
  If a LONGPRESS gesture has been added to an object, and the object receives a long press notification, this method is triggered.
  */
 -(void)pressedLong;
+
+/** Method which is called each time an object receives a long press
+ 
+ This method can be overridden to receive access to the gesture from which it was called.
+ 
+ If a LONGPRESS gesture has been added to an object, and the object receives a long press notification, this method is triggered and then triggers the object's method as provided by obj.longPressMethodName.
+ */
+-(void)pressedLong:(id)sender;
 
 #pragma mark Basic Swipe Methods
 /// @name Basic Swipe Methods

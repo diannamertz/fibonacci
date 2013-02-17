@@ -37,9 +37,10 @@
  
  @warning For more information on the above properties, consult the [UIView](UIView) class documentation.
 
- */
+*/
 
 @interface C4Control : UIControl <C4Notification, C4Gesture, C4MethodDelay, NSCopying, C4AddSubview> {
+    
 }
 
 /// @name Convenience Methods
@@ -60,13 +61,22 @@
  */
 -(void)test;
 
-/** A method to remove another object from its subviews.
+/** A method to remove another object from its view.
  
  For the object in question, use this method to remove any visible object that was previously added to it as a subview.
-
+ 
  @param visibleObject the visible object to remove from its parent view
  */
--(void)removeObject:(C4Control *)visibleObject;
+-(void)removeObject:(id)visualObject;
+
+/** A method to remove an array of objects from their view.
+ 
+ This will run the removeObject: method on each object in an array.
+ 
+ @param array the array of visible objects to remove from their parent view
+ */
+-(void)removeObjects:(NSArray *)array;
+
 
 /** A convenience method used for handling the rotation of a visual object's view after its z-rotation has changed.
  
@@ -204,6 +214,8 @@
  */
 @property (readonly, nonatomic) CGFloat height;
 
+
+#pragma mark Style Properties
 /**Specifies the width of the receiver’s border. Animatable.
  
  The border is drawn inset from the receiver’s bounds by borderWidth. It is composited above the receiver’s contents and sublayers and includes the effects of the cornerRadius property. The default is 0.0.
@@ -269,4 +281,7 @@
  */
 @property (readwrite, nonatomic, weak) UIColor *borderColor;
 
+-(void)addObjects:(NSArray *)array;
+@property (readwrite, nonatomic) NSDictionary *style;
++(C4Control *)defaultStyle;
 @end
