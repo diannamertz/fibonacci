@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601AA56C16D22CA7002A6AC4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 601AA56B16D22CA7002A6AC4 /* Constants.m */; };
 		6050716116D15D09000AF387 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710916D15C31000AF387 /* Squares.m */; };
 		6050716216D15D47000AF387 /* C4AssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710C16D15C49000AF387 /* C4AssertionHandler.m */; };
 		6050716316D15D4E000AF387 /* C4Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710E16D15C49000AF387 /* C4Button.m */; };
@@ -66,6 +67,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		601AA56A16D22CA7002A6AC4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		601AA56B16D22CA7002A6AC4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		6050710816D15C31000AF387 /* Squares.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squares.h; sourceTree = "<group>"; };
 		6050710916D15C31000AF387 /* Squares.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Squares.m; sourceTree = "<group>"; };
 		6050710A16D15C49000AF387 /* C4AddSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AddSubview.h; path = Headers/C4AddSubview.h; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 			isa = PBXGroup;
 			children = (
 				60F4533C169769E800686965 /* C4WorkSpace.m */,
+				601AA56A16D22CA7002A6AC4 /* Constants.h */,
+				601AA56B16D22CA7002A6AC4 /* Constants.m */,
 				6076B3A516CCF2A400D13431 /* Intro.h */,
 				6076B3A616CCF2A400D13431 /* Intro.m */,
 				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
@@ -545,6 +550,7 @@
 				60F4533D169769E800686965 /* C4WorkSpace.m in Sources */,
 				60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */,
 				6076B3A716CCF2A400D13431 /* Intro.m in Sources */,
+				601AA56C16D22CA7002A6AC4 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

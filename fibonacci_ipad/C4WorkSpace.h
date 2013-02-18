@@ -16,6 +16,8 @@
 
 #import "Squares.h"
 #import "Intro.h"
+#import "Seed.h"
+#import "Constants.h"
 
 @interface C4WorkSpace : C4CanvasController <SquaresDelegate, IntroDelegate>
 

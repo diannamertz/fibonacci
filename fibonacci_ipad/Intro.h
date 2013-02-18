@@ -7,6 +7,7 @@
 //
 
 #import "C4Shape.h"
+#import "Constants.h"
 @class Intro;
 
 @protocol IntroDelegate <NSObject>

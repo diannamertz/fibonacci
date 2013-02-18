@@ -7,6 +7,7 @@
 //
 
 #import "C4Shape.h"
+#import "Constants.h"
 
 @interface Seed : C4Shape
 

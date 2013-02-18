@@ -7,7 +7,6 @@
 //
 
 #import "C4Workspace.h"
-#import "Seed.h"
 
 @implementation C4WorkSpace 
 {
@@ -19,32 +18,29 @@
 
 -(void)setup
 {
-    int x=75;
-
     CGPoint center;
     center.x = self.canvas.center.x;
     center.y = self.canvas.center.y;
     center.y = self.canvas.height/2;
     center.x = self.canvas.width/2;
     
-    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*x, 13*x)];
+    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*XSQ, 13*XSQ)];
+    intro.fillColor = COLORTRANS;
+    intro.strokeColor = COLORTRANS;
     intro.center = center;
-    //intro.transform = CGAffineTransformMakeRotation( -M_PI/2);
-    intro.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
-    intro.strokeColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(0) blue:RGBToFloat(0) alpha:RGBToFloat(0)];
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
     intro.introDelegate = self;
     
-    eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*x,13*x)];
-    eightSquares.fillColor = [UIColor whiteColor];
-    eightSquares.strokeColor = [UIColor whiteColor];
+    eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*XSQ,13*XSQ)];
+    eightSquares.fillColor = COLORTRANS;
+    eightSquares.strokeColor = COLORTRANS;
     eightSquares.center = center;
     [eightSquares addGesture:TAP name:@"tapGesture" action:@"endEightSquares"];
     eightSquares.squaresDelegate = self;
     
     pinecone = [[Seed alloc] initWithFrame:CGRectMake(140, 140, 400, 400)];
-    pinecone.strokeColor = [UIColor clearColor];
-    pinecone.fillColor = [UIColor whiteColor];
+    pinecone.fillColor = COLORTRANS;
+    pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;
     [pinecone addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
     
@@ -53,14 +49,11 @@
 
 -(void)startEightSquares
 {
-    eightSquares.fillColor = [UIColor whiteColor];
-    eightSquares.strokeColor = [UIColor whiteColor];
     [self.canvas addShape:eightSquares];
 }
 
 -(void)startPinecone
 {
-    C4Log(@"delegateworking");
     [self.canvas addShape:pinecone];
 }
 

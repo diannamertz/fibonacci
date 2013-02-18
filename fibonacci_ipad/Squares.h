@@ -7,6 +7,7 @@
 //
 
 #import "C4Shape.h"
+#import "Constants.h"
 @class Squares;
 
 @protocol SquaresDelegate <NSObject>
