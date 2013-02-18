@@ -12,6 +12,7 @@
 {
     CGPoint seedArcCenter;
     C4Shape *seed, *cone, *meristem;
+    NSMutableArray *filtered, *filtered2;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -46,6 +47,8 @@
     meristem.strokeColor = COLORSALMON;
     
     //seeds
+    filtered = [[NSMutableArray alloc] init];
+    filtered2 = [[NSMutableArray alloc] init];
     int n;
     for(n = 144; n > 0; n--) {
         
@@ -59,24 +62,15 @@
         
         [seed arcWithCenter:seedArcCenter radius:4*r startAngle:0 endAngle:2*PI clockwise:NO];
         
-        [seed addGesture:TAP name:@"tapGesture" action:@"updateControl5"];
+        [seed addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
         
         //set the color for the seeds
         seed.fillColor = COLORGREY;
         seed.strokeColor = COLORTEAL;
         
-        if (n % 8) {
-            C4Log(@"%@",self);
+        if (n % 2) {
+            [filtered addObject:seed];
         }
-    
-        /*
-        int s;
-        for(s=1; s>4;s++) {
-            if ((n+s) % 8) {
-                seed.fillColor = color2;
-            }
-        }
-        */
 
         [cone.self addShape:seed];
 
@@ -88,8 +82,10 @@
 
 -(void)tapPinecone
 {
-    seed.fillColor = COLORWHITE;
+    for (seed in filtered) {
+        seed.fillColor = COLORSALMON;
+    }
 }
- 
+
 
 @end
