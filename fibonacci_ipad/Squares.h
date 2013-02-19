@@ -28,6 +28,8 @@
 -(void)addSquareEight;
 -(void)addSquareThirteen;
 -(void)endThirteenSquares;
+-(void)removeFromView;
+-(void)moveEightAndThirteen;
 -(void)addPlus;
 -(void)addPlus1;
 -(void)addPlus2;

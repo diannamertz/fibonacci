@@ -111,7 +111,7 @@
     
     int c = 65;
     
-    allCountLabels = [C4Shape rect:CGRectMake(10, 0, (21*XSQ), 2*XSQ)];
+    allCountLabels = [C4Shape rect:CGRectMake(0, 0, (21*XSQ), 2*XSQ)];
     allCountLabels.fillColor = COLORTRANS;
     allCountLabels.strokeColor = COLORTRANS;
     allCountLabels.center = CGPointMake((self.width/2),14.5*XSQ);
@@ -359,9 +359,39 @@
     countLabele13.textColor = COLORWHITE;
 }
 
--(void)endThirteenSquares {
-    [self removeFromSuperview];
+-(void)endThirteenSquares
+{
+    allSquares.animationDuration = 2.0f;
+    allSquares.animationOptions = AUTOREVERSE | REPEAT;
+    allSquares.fillColor = COLORWHITE;
+    allSquares.strokeColor = COLORWHITE;
+    
+    [self runMethod:@"removeFromView" afterDelay:2.0f];
+}
+
+-(void)removeFromView
+{
+    [allSquares removeFromSuperview];
     [self.squaresDelegate startPinecone];
+    [self moveEightAndThirteen];
+}
+
+-(void)moveEightAndThirteen
+{
+    countLabel0.textColor = COLORWHITE;
+    countLabel.textColor = COLORWHITE;
+    countLabel1.textColor = COLORWHITE;
+    countLabel2.textColor = COLORWHITE;
+    countLabel3.textColor = COLORWHITE;
+    countLabel5.textColor = COLORWHITE;
+    countLabel8.animationDuration = 3.0f;
+    countLabel13.animationDuration = 3.0f;
+    
+    countLabel8.origin = CGPointMake(0, 0);
+    countLabel13.origin = CGPointMake(20*XSQ, 0);
+    
+    allCountLabels.animationDuration = 3.0f;
+    allCountLabels.center = CGPointMake((self.width/2),7*XSQ);
 }
 
 -(void)touchesBegan {
