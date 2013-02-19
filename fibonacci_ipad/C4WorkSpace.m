@@ -10,7 +10,7 @@
 
 @implementation C4WorkSpace 
 {
-    Squares *eightSquares;
+    Squares *thirteenSquares;
     Seed *pinecone;
     CGPoint pineconeArcCenter;
     Intro *intro;
@@ -19,24 +19,19 @@
 -(void)setup
 {
     CGPoint center;
-    center.x = self.canvas.center.x;
-    center.y = self.canvas.center.y;
-    center.y = self.canvas.height/2;
-    center.x = self.canvas.width/2;
+    center = self.canvas.center;
     
-    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 8*XSQ, 13*XSQ)];
-    intro.fillColor = COLORTRANS;
-    intro.strokeColor = COLORTRANS;
+    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
     intro.center = center;
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
     intro.introDelegate = self;
     
-    eightSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,8*XSQ,13*XSQ)];
-    eightSquares.fillColor = COLORTRANS;
-    eightSquares.strokeColor = COLORTRANS;
-    eightSquares.center = center;
-    [eightSquares addGesture:TAP name:@"tapGesture" action:@"endEightSquares"];
-    eightSquares.squaresDelegate = self;
+    thirteenSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,21*XSQ,13*XSQ)];
+    thirteenSquares.fillColor = COLORTRANS;
+    thirteenSquares.strokeColor = COLORTRANS;
+    thirteenSquares.center = center;
+    [thirteenSquares addGesture:TAP name:@"tapGesture" action:@"endThirteenSquares"];
+    thirteenSquares.squaresDelegate = self;
     
     pinecone = [[Seed alloc] initWithFrame:CGRectMake(140, 140, 400, 400)];
     pinecone.fillColor = COLORTRANS;
@@ -47,9 +42,9 @@
     [self.canvas addShape:intro];
 }
 
--(void)startEightSquares
+-(void)startThirteenSquares
 {
-    [self.canvas addShape:eightSquares];
+    [self.canvas addShape:thirteenSquares];
 }
 
 -(void)startPinecone

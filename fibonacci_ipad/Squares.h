@@ -26,7 +26,21 @@
 -(void)addSquareThree;
 -(void)addSquareFive;
 -(void)addSquareEight;
--(void)endEightSquares;
+-(void)addSquareThirteen;
+-(void)endThirteenSquares;
+-(void)addPlus;
+-(void)addPlus1;
+-(void)addPlus2;
+-(void)addPlus3;
+-(void)addPlus5;
+-(void)addPlus8;
+-(void)addPlus13;
+-(void)addEqual1;
+-(void)addEqual2;
+-(void)addEqual3;
+-(void)addEqual5;
+-(void)addEqual8;
+-(void)addEqual13;
 
 @end
 

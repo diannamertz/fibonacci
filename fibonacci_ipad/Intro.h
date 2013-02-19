@@ -11,7 +11,7 @@
 @class Intro;
 
 @protocol IntroDelegate <NSObject>
--(void)startEightSquares;
+-(void)startThirteenSquares;
 @end
 
 @interface Intro : C4Shape

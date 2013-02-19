@@ -16,16 +16,16 @@
 
 -(void)setup
 {
-    //Create a rectangle
-    introBackground = [C4Shape rect:CGRectMake(0, 0, 8*XSQ, 13*XSQ)];
-    introBackground.strokeColor = COLORSALMON;
-    introBackground.fillColor = COLORGREY;
     CGPoint center;
     center.x = self.center.x;
     center.y = self.center.y;
-    
-    center.y = self.height/2;
     center.x = self.width/2;
+    center.y = self.height/2;
+    
+    //Create a rectangle
+    introBackground = [C4Shape rect:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
+    introBackground.strokeColor = COLORSALMON;
+    introBackground.fillColor = COLORGREY;
     introBackground.center = center;
     
     //create an initial font and a label
@@ -33,24 +33,17 @@
     
     label = [C4Label labelWithText:@"The Fibonacci Sequence" font:font frame:introBackground.frame];
     label.textColor = COLORWHITE;
-    label.transform = CGAffineTransformMakeRotation( -M_PI/2);
     label.numberOfLines = 3;
     label.textAlignment = ALIGNTEXTCENTER;
     
-    CGPoint labelCenter;
-    labelCenter.x = self.center.x;
-    labelCenter.y = self.center.y;
-    
-    labelCenter.y = (self.height/2);
-    labelCenter.x = (self.width/2);
-    label.center = labelCenter;
+    label.center = center;
 }
 
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self !=nil) {
-        [self setup];
+        //[self setup];
         [self rect:frame];
     }
     return self;
@@ -76,7 +69,7 @@
 -(void)endIntro2
 {
     [label removeFromSuperview];
-    [self.introDelegate startEightSquares];
+    [self.introDelegate startThirteenSquares];
 }
 
 @end

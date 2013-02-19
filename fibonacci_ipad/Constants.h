@@ -13,7 +13,7 @@
 #define COLORGREY [UIColor colorWithRed:RGBToFloat(120) green:RGBToFloat(120) blue:RGBToFloat(120) alpha:RGBToFloat(255)]
 #define COLORWHITE [UIColor colorWithRed:RGBToFloat(255) green:RGBToFloat(255) blue:RGBToFloat(255) alpha:RGBToFloat(255)]
 
-#define XSQ 75
+#define XSQ 45
 
 @interface Constants : NSObject
 

@@ -19,7 +19,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [self setup];
+        //[self setup];
         [self rect:frame];
     }
     return self;
@@ -46,6 +46,8 @@
     meristem.fillColor = COLORGREY;
     meristem.strokeColor = COLORSALMON;
     
+    
+    
     //seeds
     filtered = [[NSMutableArray alloc] init];
     filtered2 = [[NSMutableArray alloc] init];
@@ -69,9 +71,33 @@
         seed.strokeColor = COLORTEAL;
         
         if (n % 2) {
+            [filtered2 addObject:seed];
+        }
+        
+        if (!(n % 13)) {
             [filtered addObject:seed];
         }
-
+        
+        if (!((n+3) % 13)) {
+            [filtered addObject:seed];
+        }
+        
+        if (!((n+6) % 13)) {
+            [filtered addObject:seed];
+        }
+        
+        if (!((n+9) % 13)) {
+            [filtered addObject:seed];
+        }
+        
+        if (!((n+12) % 13)) {
+            [filtered addObject:seed];
+        }
+        
+        if (!((n+15) % 13)) {
+            [filtered addObject:seed];
+        }
+       
         [cone.self addShape:seed];
 
         //center the meristem
@@ -85,6 +111,15 @@
     for (seed in filtered) {
         seed.fillColor = COLORSALMON;
     }
+    [self runMethod:@"longPressPinecone" afterDelay:4.0f];
+}
+
+-(void)longPressPinecone
+{
+    seed.fillColor = COLORGREY;
+    for (seed in filtered2) {
+        seed.fillColor = COLORWHITE;
+    } 
 }
 
 

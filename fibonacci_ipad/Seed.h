@@ -12,5 +12,6 @@
 @interface Seed : C4Shape
 
 -(void)tapPinecone;
+-(void)longPressPinecone;
 
 @end
