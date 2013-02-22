@@ -33,7 +33,7 @@
     [thirteenSquares addGesture:TAP name:@"tapGesture" action:@"endThirteenSquares"];
     thirteenSquares.squaresDelegate = self;
     
-    pinecone = [[Seed alloc] initWithFrame:CGRectMake(140, 140, 400, 400)];
+    pinecone = [[Seed alloc] initWithFrame:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
     pinecone.fillColor = COLORTRANS;
     pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;

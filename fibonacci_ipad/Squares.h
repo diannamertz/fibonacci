@@ -28,7 +28,7 @@
 -(void)addSquareEight;
 -(void)addSquareThirteen;
 -(void)endThirteenSquares;
--(void)removeFromView;
+-(void)removeSquaresFromView;
 -(void)moveEightAndThirteen;
 -(void)addPlus;
 -(void)addPlus1;

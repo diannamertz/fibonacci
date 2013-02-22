@@ -13,7 +13,7 @@
     C4Shape *allSquares, *square, *square1, *square2, *square3, *square5, *square8, *square13;
     C4Label *labelAll, *label, *label1, *label2, *label3, *label5, *label8, *label13;
     C4Label *countLabel0, *countLabel, *countLabel1, *countLabel2, *countLabel3, *countLabel5, *countLabel8, *countLabel13, *countLabelp, *countLabelp1, *countLabelp2, *countLabelp3, *countLabelp5, *countLabelp8, *countLabele1, *countLabele2, *countLabele3, *countLabele5, *countLabele8, *countLabele13;
-    C4Shape *allCountLabels;
+    C4Shape *allCountLabels, *countInCount;
     CGPoint squareCenter;
 }
 
@@ -109,40 +109,44 @@
     label13.textAlignment = ALIGNTEXTCENTER;
     [square13 addLabel:label13];
     
-    int c = 65;
-    
     allCountLabels = [C4Shape rect:CGRectMake(0, 0, (21*XSQ), 2*XSQ)];
     allCountLabels.fillColor = COLORTRANS;
     allCountLabels.strokeColor = COLORTRANS;
-    allCountLabels.center = CGPointMake((self.width/2),14.5*XSQ);
+    allCountLabels.center = CGPointMake((self.width/2),14*XSQ);
     
-    countLabel0 = [C4Label labelWithText:@"0" font:squaresFont frame:CGRectMake(0,0,c,c)];
-    countLabel = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(2*c,0,c,c)];
-    countLabel1 = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(4*c,0,c,c)];
-    countLabel2 = [C4Label labelWithText:@"2" font:squaresFont frame:CGRectMake(6*c,0,c,c)];
-    countLabel3 = [C4Label labelWithText:@"3" font:squaresFont frame:CGRectMake(8*c,0,c,c)];
-    countLabel5 = [C4Label labelWithText:@"5" font:squaresFont frame:CGRectMake(10*c,0,c,c)];
-    countLabel8 = [C4Label labelWithText:@"8" font:squaresFont frame:CGRectMake(12*c,0,c,c)];
-    countLabel13 = [C4Label labelWithText:@"13" font:squaresFont frame:CGRectMake(14*c,0,c,c)];
+    int h;
+    h = ((allCountLabels.height/2)-.5*CHI);
     
-    countLabelp = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(c,0,c,c)];
+    countLabel0 = [C4Label labelWithText:@"0" font:squaresFont frame:CGRectMake(0,h,CHI,CHI)];
     
-    countLabelp1 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(3*c,0,c,c)];
-    countLabele1 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(3*c,0,c,c)];
+    countLabel = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(2*CHI,h,CHI,CHI)];
+    countLabel1 = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(4*CHI,h,CHI,CHI)];
+    countLabel2 = [C4Label labelWithText:@"2" font:squaresFont frame:CGRectMake(6*CHI,h,CHI,CHI)];
+    countLabel3 = [C4Label labelWithText:@"3" font:squaresFont frame:CGRectMake(8*CHI,h,CHI,CHI)];
+    countLabel5 = [C4Label labelWithText:@"5" font:squaresFont frame:CGRectMake(10*CHI,h,CHI,CHI)];
     
-    countLabelp2 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(5*c,0,c,c)];
-    countLabele2 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(5*c,0,c,c)];
+    countLabel8 = [C4Label labelWithText:@"8" font:squaresFont frame:CGRectMake(12*CHI,h,CHI,CHI)];
     
-    countLabelp3 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(7*c,0,c,c)];
-    countLabele3 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(7*c,0,c,c)];
+    countLabel13 = [C4Label labelWithText:@"13" font:squaresFont frame:CGRectMake(14*CHI,h,CHI,CHI)];
     
-    countLabelp5 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(9*c,0,c,c)];
-    countLabele5 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(9*c,0,c,c)];
+    countLabelp = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(CHI,h,CHI,CHI)];
     
-    countLabelp8 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(11*c,0,c,c)];
-    countLabele8 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(11*c,0,c,c)];
+    countLabelp1 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(3*CHI,h,CHI,CHI)];
+    countLabele1 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(3*CHI,h,CHI,CHI)];
     
-    countLabele13 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(13*c,0,c,c)];
+    countLabelp2 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(5*CHI,h,CHI,CHI)];
+    countLabele2 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(5*CHI,h,CHI,CHI)];
+    
+    countLabelp3 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(7*CHI,h,CHI,CHI)];
+    countLabele3 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(7*CHI,h,CHI,CHI)];
+    
+    countLabelp5 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(9*CHI,h,CHI,CHI)];
+    countLabele5 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(9*CHI,h,CHI,CHI)];
+    
+    countLabelp8 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
+    countLabele8 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
+    
+    countLabele13 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(13*CHI,h,CHI,CHI)];
     
     countLabel0.textColor = COLORTEAL;
     countLabel.textColor = COLORTEAL;
@@ -153,7 +157,12 @@
     countLabel8.textColor = COLORTEAL;
     countLabel13.textColor = COLORTEAL;
     
+    countInCount = [C4Shape rect:CGRectMake(0, 0, (21*XSQ), 2*XSQ)];
+    countInCount.fillColor = COLORTRANS;
+    countInCount.strokeColor = COLORTRANS;
+    
     [self addShape:allCountLabels];
+    [allCountLabels addShape:countInCount];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -169,38 +178,38 @@
 - (void)drawRect:(CGRect)rect
 {
     [self addShape:allSquares];
-    [allCountLabels addLabel:countLabel0];
+    [countInCount addLabel:countLabel0];
     [self runMethod:@"addPlus" afterDelay:0.5f];
 }
 
 -(void)addPlus
 {
-    [allCountLabels addLabel:countLabelp];
+    [countInCount addLabel:countLabelp];
     [self runMethod:@"addSquare" afterDelay:0.5f];
 }
 
 -(void)addSquare
 {
-    [allCountLabels addLabel:countLabel];
+    [countInCount addLabel:countLabel];
     [allSquares addShape:square];
     [self runMethod:@"addPlus1" afterDelay:0.5f];
 }
 
 -(void)addPlus1
 {
-    [allCountLabels addLabel:countLabelp];
+    [countInCount addLabel:countLabelp];
     [self runMethod:@"addEqual1" afterDelay:0.5f];
 }
 
 -(void)addEqual1
 {
-    [allCountLabels addLabel:countLabele1];
+    [countInCount addLabel:countLabele1];
     [self runMethod:@"addSquareOne" afterDelay:0.5f];
 }
 
 -(void)addSquareOne
 {
-    [allCountLabels addLabel:countLabel1];
+    [countInCount addLabel:countLabel1];
     [allSquares addShape:square1];
     [self runMethod:@"fade1" afterDelay:0.5f];
 }
@@ -217,19 +226,19 @@
 
 -(void)addPlus2
 {
-    [allCountLabels addLabel:countLabelp1];
+    [countInCount addLabel:countLabelp1];
     [self runMethod:@"addEqual2" afterDelay:0.5f];
 }
 
 -(void)addEqual2
 {
-    [allCountLabels addLabel:countLabele2];
+    [countInCount addLabel:countLabele2];
     [self runMethod:@"addSquareTwo" afterDelay:0.5f];
 }
 
 -(void)addSquareTwo
 {
-    [allCountLabels addLabel:countLabel2];
+    [countInCount addLabel:countLabel2];
     [allSquares addShape:square2];
     [self runMethod:@"fade2" afterDelay:0.5f];
 }
@@ -246,19 +255,19 @@
 
 -(void)addPlus3
 {
-    [allCountLabels addLabel:countLabelp2];
+    [countInCount addLabel:countLabelp2];
     [self runMethod:@"addEqual3" afterDelay:0.5f];
 }
 
 -(void)addEqual3
 {
-    [allCountLabels addLabel:countLabele3];
+    [countInCount addLabel:countLabele3];
     [self runMethod:@"addSquareThree" afterDelay:0.5f];
 }
 
 -(void)addSquareThree
 {
-    [allCountLabels addLabel:countLabel3];
+    [countInCount addLabel:countLabel3];
     [allSquares addShape:square3];
     [self runMethod:@"fade3" afterDelay:0.5f];
 }
@@ -275,19 +284,19 @@
 
 -(void)addPlus5
 {
-    [allCountLabels addLabel:countLabelp3];
+    [countInCount addLabel:countLabelp3];
     [self runMethod:@"addEqual5" afterDelay:0.5f];
 }
 
 -(void)addEqual5
 {
-    [allCountLabels addLabel:countLabele5];
+    [countInCount addLabel:countLabele5];
     [self runMethod:@"addSquareFive" afterDelay:0.5f];
 }
 
 -(void)addSquareFive
 {
-    [allCountLabels addLabel:countLabel5];
+    [countInCount addLabel:countLabel5];
     [allSquares addShape:square5];
     [self runMethod:@"fade5" afterDelay:0.5f];
 }
@@ -304,13 +313,13 @@
 
 -(void)addPlus8
 {
-    [allCountLabels addLabel:countLabelp5];
+    [countInCount addLabel:countLabelp5];
     [self runMethod:@"addEqual8" afterDelay:0.5f];
 }
 
 -(void)addEqual8
 {
-    [allCountLabels addLabel:countLabele8];
+    [countInCount addLabel:countLabele8];
     [self runMethod:@"addSquareEight" afterDelay:0.5f];
 }
 
@@ -333,13 +342,13 @@
 
 -(void)addPlus13
 {
-    [allCountLabels addLabel:countLabelp8];
+    [countInCount addLabel:countLabelp8];
     [self runMethod:@"addEqual13" afterDelay:0.5f];
 }
 
 -(void)addEqual13
 {
-    [allCountLabels addLabel:countLabele13];
+    [countInCount addLabel:countLabele13];
     [self runMethod:@"addSquareThirteen" afterDelay:0.5f];
 }
 
@@ -366,10 +375,10 @@
     allSquares.fillColor = COLORWHITE;
     allSquares.strokeColor = COLORWHITE;
     
-    [self runMethod:@"removeFromView" afterDelay:2.0f];
+    [self removeSquaresFromView];
 }
 
--(void)removeFromView
+-(void)removeSquaresFromView
 {
     [allSquares removeFromSuperview];
     [self.squaresDelegate startPinecone];
@@ -378,20 +387,23 @@
 
 -(void)moveEightAndThirteen
 {
+    [countInCount removeFromSuperview];
+    /*
     countLabel0.textColor = COLORWHITE;
     countLabel.textColor = COLORWHITE;
     countLabel1.textColor = COLORWHITE;
     countLabel2.textColor = COLORWHITE;
     countLabel3.textColor = COLORWHITE;
     countLabel5.textColor = COLORWHITE;
+    */
     countLabel8.animationDuration = 3.0f;
-    countLabel13.animationDuration = 3.0f;
+    countLabel8.origin = CGPointMake(93,((allCountLabels.height/2)-.5*CHI));
     
-    countLabel8.origin = CGPointMake(0, 0);
-    countLabel13.origin = CGPointMake(20*XSQ, 0);
+    countLabel13.animationDuration = 3.0f;
+    countLabel13.origin = CGPointMake(((21*XSQ)-113),((allCountLabels.height/2)-.5*CHI));
     
     allCountLabels.animationDuration = 3.0f;
-    allCountLabels.center = CGPointMake((self.width/2),7*XSQ);
+    allCountLabels.center = CGPointMake((self.width/2),(self.height/2));
 }
 
 -(void)touchesBegan {
