@@ -8,10 +8,14 @@
 
 #import "C4Shape.h"
 #import "Constants.h"
+#import "Circle8.h"
+#import "Circle13.h"
 
-@interface Seed : C4Shape
+@interface Seed : C4Shape <Circle8Delegate, Circle13Delegate>
 
 -(void)tapPinecone;
--(void)longPressPinecone;
+-(void)circle8Tapped;
+-(void)circle13Tapped;
+
 
 @end

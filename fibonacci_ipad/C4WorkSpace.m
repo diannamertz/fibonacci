@@ -14,6 +14,8 @@
     Seed *pinecone;
     CGPoint pineconeArcCenter;
     Intro *intro;
+    Circle8 *circle8;
+    Circle13 *circle13;
 }
 
 -(void)setup
@@ -38,6 +40,28 @@
     pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;
     [pinecone addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
+        
+    CGPoint circleCenter8;
+    circleCenter8.x = center.x - 400;
+    circleCenter8.y = self.canvas.height/2;
+    
+    circle8 = [[Circle8 alloc] initWithFrame:CGRectMake(0,0,100,100)];
+    circle8.center = circleCenter8;
+    circle8.fillColor = COLORTRANS;
+    circle8.strokeColor = COLORTRANS;
+    [circle8 addGesture:TAP name:@"tapGesture" action:@"tapCircleEight"];
+    circle8.circle8Delegate = pinecone;
+    
+    CGPoint circleCenter13;
+    circleCenter13.x = center.x + 400;
+    circleCenter13.y = self.canvas.height/2;
+
+    circle13 = [[Circle13 alloc] initWithFrame:CGRectMake(0,0,100,100)];
+    circle13.center = circleCenter13;
+    circle13.fillColor = COLORTRANS;
+    circle13.strokeColor = COLORTRANS;
+    [circle13 addGesture:TAP name:@"tapGesture" action:@"tapCircleThirteen"];
+    circle13.circle13Delegate = pinecone;
     
     [self.canvas addShape:intro];
 }
@@ -50,6 +74,8 @@
 -(void)startPinecone
 {
     [self.canvas addShape:pinecone];
+    [self.canvas addShape:circle8];
+    [self.canvas addShape:circle13];
 }
 
 @end

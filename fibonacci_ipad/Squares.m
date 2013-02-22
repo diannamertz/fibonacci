@@ -388,19 +388,12 @@
 -(void)moveEightAndThirteen
 {
     [countInCount removeFromSuperview];
-    /*
-    countLabel0.textColor = COLORWHITE;
-    countLabel.textColor = COLORWHITE;
-    countLabel1.textColor = COLORWHITE;
-    countLabel2.textColor = COLORWHITE;
-    countLabel3.textColor = COLORWHITE;
-    countLabel5.textColor = COLORWHITE;
-    */
+
     countLabel8.animationDuration = 3.0f;
-    countLabel8.origin = CGPointMake(93,((allCountLabels.height/2)-.5*CHI));
+    countLabel8.origin = CGPointMake((allCountLabels.width/2) - 400,((allCountLabels.height/2)-.5*CHI));
     
     countLabel13.animationDuration = 3.0f;
-    countLabel13.origin = CGPointMake(((21*XSQ)-113),((allCountLabels.height/2)-.5*CHI));
+    countLabel13.origin = CGPointMake((allCountLabels.width/2) + 400,((allCountLabels.height/2)-.5*CHI));
     
     allCountLabels.animationDuration = 3.0f;
     allCountLabels.center = CGPointMake((self.width/2),(self.height/2));

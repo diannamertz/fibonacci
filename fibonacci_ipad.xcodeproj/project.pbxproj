@@ -45,6 +45,8 @@
 		6050718416D15E44000AF387 /* C4YouTubeURLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715716D15C49000AF387 /* C4YouTubeURLParser.m */; };
 		6050718516D15E49000AF387 /* HiddenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715A16D15C49000AF387 /* HiddenNav.m */; };
 		6050718616D15E50000AF387 /* HiddenNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050715D16D15C49000AF387 /* HiddenNavView.m */; };
+		605F643616D7A5E900033239 /* Circle8.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F643516D7A5E800033239 /* Circle8.m */; };
+		605F643916D7A5F900033239 /* Circle13.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F643816D7A5F900033239 /* Circle13.m */; };
 		6076B3A716CCF2A400D13431 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6076B3A616CCF2A400D13431 /* Intro.m */; };
 		60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F0C6C016AEA1D40096B6DE /* Seed.m */; };
 		60F4531A169769E800686965 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45319169769E800686965 /* Accelerate.framework */; };
@@ -155,6 +157,10 @@
 		6050715E16D15C49000AF387 /* OuterShape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OuterShape.h; path = Headers/OuterShape.h; sourceTree = "<group>"; };
 		6050715F16D15C49000AF387 /* OuterShape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OuterShape.m; path = Headers/OuterShape.m; sourceTree = "<group>"; };
 		6050716016D15C49000AF387 /* UITouch+C4Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UITouch+C4Touch.h"; path = "Headers/UITouch+C4Touch.h"; sourceTree = "<group>"; };
+		605F643416D7A5E800033239 /* Circle8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle8.h; sourceTree = "<group>"; };
+		605F643516D7A5E800033239 /* Circle8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle8.m; sourceTree = "<group>"; };
+		605F643716D7A5F900033239 /* Circle13.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle13.h; sourceTree = "<group>"; };
+		605F643816D7A5F900033239 /* Circle13.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle13.m; sourceTree = "<group>"; };
 		6076B3A516CCF2A400D13431 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		6076B3A616CCF2A400D13431 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
 		60F0C6BF16AEA1D40096B6DE /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
@@ -294,6 +300,10 @@
 				6076B3A616CCF2A400D13431 /* Intro.m */,
 				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
 				60F0C6C016AEA1D40096B6DE /* Seed.m */,
+				605F643416D7A5E800033239 /* Circle8.h */,
+				605F643516D7A5E800033239 /* Circle8.m */,
+				605F643716D7A5F900033239 /* Circle13.h */,
+				605F643816D7A5F900033239 /* Circle13.m */,
 				6050710816D15C31000AF387 /* Squares.h */,
 				6050710916D15C31000AF387 /* Squares.m */,
 				60F4533E169769E800686965 /* Framework */,
@@ -551,6 +561,8 @@
 				60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */,
 				6076B3A716CCF2A400D13431 /* Intro.m in Sources */,
 				601AA56C16D22CA7002A6AC4 /* Constants.m in Sources */,
+				605F643616D7A5E900033239 /* Circle8.m in Sources */,
+				605F643916D7A5F900033239 /* Circle13.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
