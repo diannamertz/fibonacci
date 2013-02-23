@@ -12,7 +12,7 @@
 {
     CGPoint seedArcCenter;
     C4Shape *seed, *cone;
-    NSMutableArray *filtered, *filtered2;
+    NSMutableArray *filtered, *filtered2, *filtered3;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -48,6 +48,7 @@
     //seeds
     filtered = [[NSMutableArray alloc] init];
     filtered2 = [[NSMutableArray alloc] init];
+    filtered3 = [[NSMutableArray alloc] init];
     int n;
     for(n = 144; n > 0; n--)
     {
@@ -63,6 +64,10 @@
         //set the color for the seeds
         seed.fillColor = COLORWHITE;
         seed.strokeColor = COLORGREY;
+        
+        if (n) {
+            [filtered3 addObject:seed];
+        }
         
         if (n % 2) {
             [filtered2 addObject:seed];
@@ -103,6 +108,9 @@
 
 -(void)circle8Tapped
 {
+    for (seed in filtered3) {
+        seed.fillColor = COLORWHITE;
+    }
     for (seed in filtered2) {
         seed.fillColor = COLORTEAL;
     }
@@ -110,6 +118,9 @@
 
 -(void)circle13Tapped
 {
+    for (seed in filtered3) {
+        seed.fillColor = COLORWHITE;
+    }
     for (seed in filtered) {
         seed.fillColor = COLORSALMON;
     } 

@@ -36,7 +36,6 @@
 
 -(void)tapCircleEight
 {
-    C4Log(@"hi circle8");
     [self.circle8Delegate circle8Tapped];
     [self.tealCircleDelegate tealCircleShow];
 }

@@ -36,7 +36,6 @@
 
 -(void)tapCircleThirteen
 {
-    C4Log(@"hi circle13");
     [self.circle13Delegate circle13Tapped];
     [self.salmonCircleDelegate salmonCircleShow];
 }

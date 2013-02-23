@@ -10,7 +10,7 @@
 
 @implementation BackgroundCircle
 {
-    C4Shape *whiteCircle, *tealCircle, *salmonCircle;
+    C4Shape *whiteCircle, *tealCircle, *tealInnerCircle, *salmonCircle, *salmonInnerCircle, *numberCircle8, *numberCircle13, *numberLabel8;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -45,10 +45,44 @@
     tealCircle.fillColor = COLORWHITE;
     tealCircle.strokeColor = COLORTEAL;
     
+    tealInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
+    tealInnerCircle.center = center;
+    tealInnerCircle.fillColor = COLORWHITE;
+    tealInnerCircle.strokeColor = COLORTEAL;
+    
+    numberCircle8 = [C4Shape ellipse:CGRectMake(0,0,500,500)];
+    numberCircle8.center = center;
+    numberCircle8.fillColor = COLORTRANS;
+    numberCircle8.strokeColor = COLORTRANS;
+    
+    for (NSInteger i=1; i<=8; i++)
+    {
+        CATextLayer *number = [CATextLayer layer];
+        number.string = [NSString stringWithFormat:@"%i",i];
+        number.alignmentMode = @"center";
+        number.fontSize = 25.0;
+        number.foregroundColor = [[UIColor blackColor] CGColor];
+        number.bounds = CGRectMake(0.0, 0.0, 25.0, numberCircle8.bounds.size.height / 2.0);
+        number.position = CGPointMake(CGRectGetMidX(numberCircle8.bounds ), CGRectGetMidY(numberCircle8.bounds));
+        number.anchorPoint = CGPointMake(0.5, 1.0);
+        number.transform = CATransform3DMakeRotation((M_PI * 2) / 8.0 * i, 0, 0, 1);
+        [numberCircle8.layer addSublayer:number];
+    }
+    
     salmonCircle = [C4Shape ellipse:CGRectMake(0, 0, 550, 550)];
     salmonCircle.center = center;
     salmonCircle.fillColor = COLORWHITE;
     salmonCircle.strokeColor = COLORSALMON;
+    
+    salmonInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
+    salmonInnerCircle.center = center;
+    salmonInnerCircle.fillColor = COLORWHITE;
+    salmonInnerCircle.strokeColor = COLORSALMON;
+    
+    numberCircle13 = [C4Shape ellipse:CGRectMake(0,0,500,500)];
+    numberCircle13.center = center;
+    numberCircle13.fillColor = COLORTRANS;
+    numberCircle13.strokeColor = COLORTRANS;
     
     [self addShape:whiteCircle];
 }
@@ -56,16 +90,15 @@
 -(void)tealCircleShow
 {
     [self addShape:tealCircle];
-    C4Log(@"Wooah tealCircle");
+    [self addShape:numberCircle8];
+    [self addShape:tealInnerCircle];
 }
 
 -(void)salmonCircleShow
 {
     [self addShape:salmonCircle];
-    C4Log(@"Wooah salmonCircle");
+    [self addShape:numberCircle13];
+    [self addShape:salmonInnerCircle];
 }
-
-
-
 
 @end

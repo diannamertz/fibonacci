@@ -15,6 +15,7 @@
 
 #define XSQ 45
 #define CHI 65
+#define   DEGREES_TO_RADIANS(degrees)  ((pi * degrees)/ 180)
 
 @interface Constants : NSObject
 
