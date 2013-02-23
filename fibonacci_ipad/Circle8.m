@@ -25,7 +25,7 @@
 -(void)setup
 {
     localCircle8 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
-    localCircle8.fillColor = COLORSALMON;
+    localCircle8.fillColor = COLORTRANS;
     localCircle8.strokeColor = COLORGREY;
 }
 

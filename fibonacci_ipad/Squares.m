@@ -390,10 +390,10 @@
     [countInCount removeFromSuperview];
 
     countLabel8.animationDuration = 3.0f;
-    countLabel8.origin = CGPointMake((allCountLabels.width/2) - 400,((allCountLabels.height/2)-.5*CHI));
+    countLabel8.origin = CGPointMake((super.self.width/2) - 405,((allCountLabels.height/2)-.5*CHI));
     
     countLabel13.animationDuration = 3.0f;
-    countLabel13.origin = CGPointMake((allCountLabels.width/2) + 400,((allCountLabels.height/2)-.5*CHI));
+    countLabel13.origin = CGPointMake((allCountLabels.width/2) + 385,((allCountLabels.height/2)-.5*CHI));
     
     allCountLabels.animationDuration = 3.0f;
     allCountLabels.center = CGPointMake((self.width/2),(self.height/2));
