@@ -394,6 +394,7 @@
     
     countLabel13.animationDuration = 3.0f;
     countLabel13.origin = CGPointMake((allCountLabels.width/2) + 385,((allCountLabels.height/2)-.5*CHI));
+    countLabel13.textColor = COLORSALMON;
     
     allCountLabels.animationDuration = 3.0f;
     allCountLabels.center = CGPointMake((self.width/2),(self.height/2));

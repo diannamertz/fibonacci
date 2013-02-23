@@ -11,7 +11,7 @@
 @implementation Seed
 {
     CGPoint seedArcCenter;
-    C4Shape *seed, *cone, *meristem;
+    C4Shape *seed, *cone;
     NSMutableArray *filtered, *filtered2;
 }
 
@@ -45,21 +45,12 @@
 
 -(void)makeSeed
 {
-    /*
-    //define the meristem
-    meristem = [C4Shape ellipse:CGRectMake(0,0,40,40)];
-    
-    //set the color for the meristem
-    meristem.fillColor = COLORGREY;
-    meristem.strokeColor = COLORSALMON;
-    */
-    
     //seeds
     filtered = [[NSMutableArray alloc] init];
     filtered2 = [[NSMutableArray alloc] init];
     int n;
-    for(n = 144; n > 0; n--) {
-        
+    for(n = 144; n > 0; n--)
+    {
         float r = sqrt(n);
         float t = 137.5*PI/180*n;
         seedArcCenter.x = ((21*XSQ)/2) + r*sin(t)*.09*n;
@@ -70,8 +61,8 @@
         [seed arcWithCenter:seedArcCenter radius:4*r startAngle:0 endAngle:2*PI clockwise:NO];
                 
         //set the color for the seeds
-        seed.fillColor = COLORGREY;
-        seed.strokeColor = COLORSALMON;
+        seed.fillColor = COLORWHITE;
+        seed.strokeColor = COLORGREY;
         
         if (n % 2) {
             [filtered2 addObject:seed];
@@ -102,10 +93,6 @@
         }
 
         [cone addShape:seed];
-        
-        //center the meristem
-        //meristem.center = seedArcCenter;
-        //[cone addShape:meristem];
     }
 }
 
@@ -118,7 +105,7 @@
 -(void)circle8Tapped
 {
     C4Log(@"circle8Tapped");
-    for (seed in filtered) {
+    for (seed in filtered2) {
         seed.fillColor = COLORTEAL;
     }
 }
@@ -126,8 +113,8 @@
 -(void)circle13Tapped
 {
     C4Log(@"circle13Tapped");
-    for (seed in filtered2) {
-        seed.fillColor = COLORWHITE;
+    for (seed in filtered) {
+        seed.fillColor = COLORSALMON;
     } 
 }
 
