@@ -98,13 +98,11 @@
 
 -(void)tapPinecone
 {
-    //[self setup];
-    C4Log(@"tapPinecone working");
+    C4Log(@"tapPinecone -- no action");
 }
 
 -(void)circle8Tapped
 {
-    C4Log(@"circle8Tapped");
     for (seed in filtered2) {
         seed.fillColor = COLORTEAL;
     }
@@ -112,7 +110,6 @@
 
 -(void)circle13Tapped
 {
-    C4Log(@"circle13Tapped");
     for (seed in filtered) {
         seed.fillColor = COLORSALMON;
     } 

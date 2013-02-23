@@ -27,7 +27,6 @@
     localCircle13 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
     localCircle13.fillColor = COLORTRANS;
     localCircle13.strokeColor = COLORSALMON;
-    
 }
 
 -(void)drawRect:(CGRect)rect
@@ -39,6 +38,7 @@
 {
     C4Log(@"hi circle13");
     [self.circle13Delegate circle13Tapped];
+    [self.salmonCircleDelegate salmonCircleShow];
 }
 
 @end

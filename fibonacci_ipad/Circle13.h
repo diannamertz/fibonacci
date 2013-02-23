@@ -14,9 +14,14 @@
 -(void)circle13Tapped;
 @end
 
+@protocol SalmonCircleDelegate <NSObject>
+-(void)salmonCircleShow;
+@end
+
 @interface Circle13 : C4Shape
 
 @property (nonatomic, assign) id<Circle13Delegate> circle13Delegate;
+@property (nonatomic, assign) id<SalmonCircleDelegate> salmonCircleDelegate;
 
 -(void)tapCircleThirteen;
 

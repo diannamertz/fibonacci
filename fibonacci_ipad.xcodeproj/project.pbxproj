@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		601AA56C16D22CA7002A6AC4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 601AA56B16D22CA7002A6AC4 /* Constants.m */; };
+		60464FBA16D8D56D00A6DB31 /* BackgroundCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 60464FB916D8D56D00A6DB31 /* BackgroundCircle.m */; };
 		6050716116D15D09000AF387 /* Squares.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710916D15C31000AF387 /* Squares.m */; };
 		6050716216D15D47000AF387 /* C4AssertionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710C16D15C49000AF387 /* C4AssertionHandler.m */; };
 		6050716316D15D4E000AF387 /* C4Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 6050710E16D15C49000AF387 /* C4Button.m */; };
@@ -71,6 +72,8 @@
 /* Begin PBXFileReference section */
 		601AA56A16D22CA7002A6AC4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		601AA56B16D22CA7002A6AC4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		60464FB816D8D56C00A6DB31 /* BackgroundCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundCircle.h; sourceTree = "<group>"; };
+		60464FB916D8D56D00A6DB31 /* BackgroundCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundCircle.m; sourceTree = "<group>"; };
 		6050710816D15C31000AF387 /* Squares.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Squares.h; sourceTree = "<group>"; };
 		6050710916D15C31000AF387 /* Squares.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Squares.m; sourceTree = "<group>"; };
 		6050710A16D15C49000AF387 /* C4AddSubview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = C4AddSubview.h; path = Headers/C4AddSubview.h; sourceTree = "<group>"; };
@@ -300,6 +303,8 @@
 				6076B3A616CCF2A400D13431 /* Intro.m */,
 				60F0C6BF16AEA1D40096B6DE /* Seed.h */,
 				60F0C6C016AEA1D40096B6DE /* Seed.m */,
+				60464FB816D8D56C00A6DB31 /* BackgroundCircle.h */,
+				60464FB916D8D56D00A6DB31 /* BackgroundCircle.m */,
 				605F643416D7A5E800033239 /* Circle8.h */,
 				605F643516D7A5E800033239 /* Circle8.m */,
 				605F643716D7A5F900033239 /* Circle13.h */,
@@ -563,6 +568,7 @@
 				601AA56C16D22CA7002A6AC4 /* Constants.m in Sources */,
 				605F643616D7A5E900033239 /* Circle8.m in Sources */,
 				605F643916D7A5F900033239 /* Circle13.m in Sources */,
+				60464FBA16D8D56D00A6DB31 /* BackgroundCircle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

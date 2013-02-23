@@ -14,9 +14,14 @@
 -(void)circle8Tapped;
 @end
 
-@interface Circle8 : C4Shape
+@protocol TealCircleDelegate <NSObject>
+-(void)tealCircleShow;
+@end
+
+@interface Circle8 : C4Shape 
 
 @property (nonatomic, assign) id<Circle8Delegate> circle8Delegate;
+@property (nonatomic, assign) id<TealCircleDelegate> tealCircleDelegate;
 
 -(void)tapCircleEight;
 

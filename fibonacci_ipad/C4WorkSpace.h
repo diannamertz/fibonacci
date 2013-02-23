@@ -20,8 +20,8 @@
 #import "Constants.h"
 #import "Circle8.h"
 #import "Circle13.h"
+#import "BackgroundCircle.h"
 
 @interface C4WorkSpace : C4CanvasController <SquaresDelegate, IntroDelegate>
-
 
 @end
