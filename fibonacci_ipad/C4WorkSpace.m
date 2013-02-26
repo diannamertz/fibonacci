@@ -17,6 +17,7 @@
     Circle8 *circle8;
     Circle13 *circle13;
     BackgroundCircle *backgroundCircle;
+    C4Image *i1;
 }
 
 -(void)setup
@@ -40,7 +41,8 @@
     pinecone.fillColor = COLORTRANS;
     pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;
-    [pinecone addGesture:TAP name:@"tapGesture" action:@"tapPinecone"];
+    pinecone.startoverDelegate = self;
+    [pinecone addGesture:SWIPERIGHT name:@"swipeGesture" action:@"swipePinecone"];
         
     CGPoint circleCenter8;
     circleCenter8.x = center.x - 400;
@@ -71,7 +73,22 @@
     circle13.circle13Delegate = pinecone;
     circle13.salmonCircleDelegate = backgroundCircle;
     
+    CGPoint i1Center;
+    i1Center.x = circleCenter8.x;
+    i1Center.y = center.y -300;
+    i1 = [C4Image imageNamed:@"nav-back.png"];
+    i1.center = i1Center;
+
     [self.canvas addShape:intro];
+}
+
+-(void)restart
+{
+    [backgroundCircle removeFromSuperview];
+    [circle8 removeFromSuperview];
+    [circle13 removeFromSuperview];
+    [pinecone removeFromSuperview];
+    [self setup];
 }
 
 -(void)startThirteenSquares

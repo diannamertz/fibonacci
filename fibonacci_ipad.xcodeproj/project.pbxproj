@@ -49,6 +49,7 @@
 		605F643616D7A5E900033239 /* Circle8.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F643516D7A5E800033239 /* Circle8.m */; };
 		605F643916D7A5F900033239 /* Circle13.m in Sources */ = {isa = PBXBuildFile; fileRef = 605F643816D7A5F900033239 /* Circle13.m */; };
 		6076B3A716CCF2A400D13431 /* Intro.m in Sources */ = {isa = PBXBuildFile; fileRef = 6076B3A616CCF2A400D13431 /* Intro.m */; };
+		60A0AEA816DCD14A00DA17EF /* nav-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A0AEA716DCD14A00DA17EF /* nav-back.png */; };
 		60F0C6C116AEA1D40096B6DE /* Seed.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F0C6C016AEA1D40096B6DE /* Seed.m */; };
 		60F4531A169769E800686965 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F45319169769E800686965 /* Accelerate.framework */; };
 		60F4531C169769E800686965 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F4531B169769E800686965 /* AVFoundation.framework */; };
@@ -166,6 +167,7 @@
 		605F643816D7A5F900033239 /* Circle13.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle13.m; sourceTree = "<group>"; };
 		6076B3A516CCF2A400D13431 /* Intro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Intro.h; sourceTree = "<group>"; };
 		6076B3A616CCF2A400D13431 /* Intro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Intro.m; sourceTree = "<group>"; };
+		60A0AEA716DCD14A00DA17EF /* nav-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav-back.png"; sourceTree = "<group>"; };
 		60F0C6BF16AEA1D40096B6DE /* Seed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seed.h; sourceTree = "<group>"; };
 		60F0C6C016AEA1D40096B6DE /* Seed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Seed.m; sourceTree = "<group>"; };
 		60F45315169769E800686965 /* fibonacci_ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fibonacci_ipad.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +260,14 @@
 			path = Headers/en.lproj;
 			sourceTree = "<group>";
 		};
+		60A0AEA616DCD14A00DA17EF /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				60A0AEA716DCD14A00DA17EF /* nav-back.png */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		60F4530A169769E800686965 = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +321,7 @@
 				605F643816D7A5F900033239 /* Circle13.m */,
 				6050710816D15C31000AF387 /* Squares.h */,
 				6050710916D15C31000AF387 /* Squares.m */,
+				60A0AEA616DCD14A00DA17EF /* Media */,
 				60F4533E169769E800686965 /* Framework */,
 				60F45330169769E800686965 /* Supporting Files */,
 			);
@@ -513,6 +524,7 @@
 			files = (
 				60F45334169769E800686965 /* InfoPlist.strings in Resources */,
 				60F45372169769E900686965 /* C4Canvas.xib in Resources */,
+				60A0AEA816DCD14A00DA17EF /* nav-back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

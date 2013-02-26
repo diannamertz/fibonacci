@@ -12,7 +12,7 @@
 {
     CGPoint seedArcCenter;
     C4Shape *seed, *cone;
-    NSMutableArray *filtered, *filtered2, *filteredSalmonArray0, *filteredSalmonArray1, *filteredSalmonArray2, *filteredSalmonArray3, *filteredSalmonArray4, *filteredSalmonArray5, *filteredSalmonArray6, *filteredSalmonArray7, *filteredSalmonArray8, *filteredSalmonArray9, *filteredSalmonArray10, *filteredSalmonArray11, *filteredSalmonArray12, *filteredTealArray1, *filteredTealArray2, *filteredTealArray3, *filteredTealArray4, *filteredTealArray5, *filteredTealArray6, *filteredTealArray7, *filteredTealArray8;
+    NSMutableArray *filteredSalmonArray0, *filteredSalmonArray1, *filteredSalmonArray2, *filteredSalmonArray3, *filteredSalmonArray4, *filteredSalmonArray5, *filteredSalmonArray6, *filteredSalmonArray7, *filteredSalmonArray8, *filteredSalmonArray9, *filteredSalmonArray10, *filteredSalmonArray11, *filteredSalmonArray12, *filteredTealArray1, *filteredTealArray2, *filteredTealArray3, *filteredTealArray4, *filteredTealArray5, *filteredTealArray6, *filteredTealArray7, *filteredTealArray8;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -46,8 +46,6 @@
 -(void)makeSeed
 {
     //seeds
-    filtered = [[NSMutableArray alloc] init];
-    filtered2 = [[NSMutableArray alloc] init];
     filteredTealArray1 = [[NSMutableArray alloc] init];
     filteredTealArray2 = [[NSMutableArray alloc] init];
     filteredTealArray3 = [[NSMutableArray alloc] init];
@@ -85,14 +83,6 @@
         //set the color for the seeds
         seed.fillColor = COLORWHITE;
         seed.strokeColor = COLORGREY;
-        
-        if (n) {
-            [filtered addObject:seed];
-        }
-        
-        if (n % 2) {
-            [filtered2 addObject:seed];
-        }
         
         if (!((n+0) % 8)) {
             [filteredTealArray1 addObject:seed];
@@ -161,21 +151,13 @@
     }
 }
 
--(void)tapPinecone
+-(void)swipePinecone
 {
-    C4Log(@"tapPinecone -- no action");
+    [self.startoverDelegate restart];
 }
 
 -(void)circle8Tapped
 {
-    /*
-    for (seed in filtered) {
-        seed.fillColor = COLORWHITE;
-    }
-    for (seed in filtered2) {
-        seed.fillColor = COLORTEAL;
-    }
-     */
     for (seed in filteredTealArray1) {
         seed.fillColor = [UIColor colorWithRed:RGBToFloat(0) green:RGBToFloat(174) blue:RGBToFloat(150) alpha:RGBToFloat(255)];
     }

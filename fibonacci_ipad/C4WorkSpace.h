@@ -22,6 +22,6 @@
 #import "Circle13.h"
 #import "BackgroundCircle.h"
 
-@interface C4WorkSpace : C4CanvasController <SquaresDelegate, IntroDelegate>
+@interface C4WorkSpace : C4CanvasController <SquaresDelegate, IntroDelegate, StartoverDelegate>
 
 @end

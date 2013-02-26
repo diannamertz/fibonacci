@@ -11,10 +11,17 @@
 #import "Circle8.h"
 #import "Circle13.h"
 #import <QuartzCore/QuartzCore.h>
+@class Seed;
+
+@protocol StartoverDelegate <NSObject>
+-(void)restart;
+@end
 
 @interface Seed : C4Shape <Circle8Delegate, Circle13Delegate>
 
--(void)tapPinecone;
+@property (nonatomic, assign) id<StartoverDelegate> startoverDelegate;
+
+-(void)swipePinecone;
 -(void)circle8Tapped;
 -(void)circle13Tapped;
 
