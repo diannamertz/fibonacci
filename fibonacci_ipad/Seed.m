@@ -60,13 +60,13 @@
         //define the seed
         seed = [[C4Shape alloc] initWithFrame:CGRectMake(((seedArcCenter.x)-4*r), ((seedArcCenter.y)-4*r), 4*r, 4*r)];
         [seed arcWithCenter:seedArcCenter radius:4*r startAngle:0 endAngle:2*PI clockwise:NO];
-                
+        
         //set the color for the seeds
         seed.fillColor = COLORWHITE;
         seed.strokeColor = COLORGREY;
         
         if (n) {
-            [filtered3 addObject:seed];
+            [filtered addObject:seed];
         }
         
         if (n % 2) {
@@ -74,29 +74,29 @@
         }
         
         if (!(n % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
         
         if (!((n+3) % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
         
         if (!((n+6) % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
         
         if (!((n+9) % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
         
         if (!((n+12) % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
         
         if (!((n+15) % 13)) {
-            [filtered addObject:seed];
+            [filtered3 addObject:seed];
         }
-
+        
         [cone addShape:seed];
     }
 }
@@ -108,7 +108,7 @@
 
 -(void)circle8Tapped
 {
-    for (seed in filtered3) {
+    for (seed in filtered) {
         seed.fillColor = COLORWHITE;
     }
     for (seed in filtered2) {
@@ -118,12 +118,12 @@
 
 -(void)circle13Tapped
 {
-    for (seed in filtered3) {
+    for (seed in filtered) {
         seed.fillColor = COLORWHITE;
     }
-    for (seed in filtered) {
+    for (seed in filtered3) {
         seed.fillColor = COLORSALMON;
-    } 
+    }
 }
 
 
