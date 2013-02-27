@@ -21,13 +21,14 @@
 }
 
 -(void)setup
-{    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grid.png"]];
+{
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ecailles.png"]];
     
     CGPoint center;
     center = self.canvas.center;
     
-    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
+    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, self.canvas.width, self.canvas.height)];
     intro.center = center;
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
     intro.fillColor = COLORTRANS;
