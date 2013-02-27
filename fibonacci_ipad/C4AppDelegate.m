@@ -94,7 +94,7 @@
     [C4Shape defaultStyle].lineDashPattern = nil;
     [C4Shape defaultStyle].lineDashPhase = 0.0f;
     [C4Shape defaultStyle].lineJoin = JOINMITER;
-    [C4Shape defaultStyle].lineWidth = 5.0f;
+    [C4Shape defaultStyle].lineWidth = 3.0f;
     [C4Shape defaultStyle].miterLimit = 5.0f;
     [C4Shape defaultStyle].strokeColor = C4BLUE;
     [C4Shape defaultStyle].strokeEnd = 1.0f;

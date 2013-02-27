@@ -10,7 +10,7 @@
 
 @implementation Circle13
 {
-    C4Shape *localCircle13;
+    C4Shape *transCircle13;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -24,14 +24,14 @@
 
 -(void)setup
 {
-    localCircle13 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
-    localCircle13.fillColor = COLORTRANS;
-    localCircle13.strokeColor = COLORSALMON;
+    transCircle13 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
+    transCircle13.fillColor = COLORTRANS;
+    transCircle13.strokeColor = COLORTRANS;
 }
 
 -(void)drawRect:(CGRect)rect
 {
-    [self addShape:localCircle13];
+    [self addShape:transCircle13];
 }
 
 -(void)tapCircleThirteen

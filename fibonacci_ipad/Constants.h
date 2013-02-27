@@ -17,9 +17,6 @@
 #define CHI 65
 #define   DEGREES_TO_RADIANS(degrees)  ((pi * degrees)/ 180)
 
-#define COLORTEAL1 [UIColor colorWithHue:0.625 saturation:0.0 brightness:0.85 alpha:1.0]
-
-
 @interface Constants : NSObject
 
 @end

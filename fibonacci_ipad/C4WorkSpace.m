@@ -14,20 +14,24 @@
     Seed *pinecone;
     CGPoint pineconeArcCenter;
     Intro *intro;
-    Circle8 *circle8;
-    Circle13 *circle13;
+    Circle8 *transCircle8Button;
+    Circle13 *transCircle13Button;
     BackgroundCircle *backgroundCircle;
     C4Image *i1;
 }
 
 -(void)setup
-{
+{    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grid.png"]];
+    
     CGPoint center;
     center = self.canvas.center;
     
     intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
     intro.center = center;
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
+    intro.fillColor = COLORTRANS;
+    intro.strokeColor = COLORTRANS;
     intro.introDelegate = self;
     
     thirteenSquares = [[Squares alloc] initWithFrame:CGRectMake(0,0,21*XSQ,13*XSQ)];
@@ -37,7 +41,7 @@
     [thirteenSquares addGesture:TAP name:@"tapGesture" action:@"endThirteenSquares"];
     thirteenSquares.squaresDelegate = self;
     
-    pinecone = [[Seed alloc] initWithFrame:CGRectMake(0, 0, 21*XSQ, 13*XSQ)];
+    pinecone = [[Seed alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
     pinecone.fillColor = COLORTRANS;
     pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;
@@ -53,25 +57,25 @@
     backgroundCircle.fillColor = COLORTRANS;
     backgroundCircle.strokeColor = COLORTRANS;
     
-    circle8 = [[Circle8 alloc] initWithFrame:CGRectMake(0,0,100,100)];
-    circle8.center = circleCenter8;
-    circle8.fillColor = COLORTRANS;
-    circle8.strokeColor = COLORTRANS;
-    [circle8 addGesture:TAP name:@"tapGesture" action:@"tapCircleEight"];
-    circle8.circle8Delegate = pinecone;
-    circle8.tealCircleDelegate = backgroundCircle;
-    
+    transCircle8Button = [[Circle8 alloc] initWithFrame:CGRectMake(0,0,100,100)];
+    transCircle8Button.center = circleCenter8;
+    transCircle8Button.fillColor = COLORTRANS;
+    transCircle8Button.strokeColor = COLORTRANS;
+    [transCircle8Button addGesture:TAP name:@"tapGesture" action:@"tapCircleEight"];
+    transCircle8Button.circle8Delegate = pinecone;
+    transCircle8Button.tealCircleDelegate = backgroundCircle;
+
     CGPoint circleCenter13;
     circleCenter13.x = center.x + 400;
     circleCenter13.y = self.canvas.height/2;
 
-    circle13 = [[Circle13 alloc] initWithFrame:CGRectMake(0,0,100,100)];
-    circle13.center = circleCenter13;
-    circle13.fillColor = COLORTRANS;
-    circle13.strokeColor = COLORTRANS;
-    [circle13 addGesture:TAP name:@"tapGesture" action:@"tapCircleThirteen"];
-    circle13.circle13Delegate = pinecone;
-    circle13.salmonCircleDelegate = backgroundCircle;
+    transCircle13Button = [[Circle13 alloc] initWithFrame:CGRectMake(0,0,100,100)];
+    transCircle13Button.center = circleCenter13;
+    transCircle13Button.fillColor = COLORTRANS;
+    transCircle13Button.strokeColor = COLORTRANS;
+    [transCircle13Button addGesture:TAP name:@"tapGesture" action:@"tapCircleThirteen"];
+    transCircle13Button.circle13Delegate = pinecone;
+    transCircle13Button.salmonCircleDelegate = backgroundCircle;
     
     CGPoint i1Center;
     i1Center.x = circleCenter8.x;
@@ -85,9 +89,10 @@
 -(void)restart
 {
     [backgroundCircle removeFromSuperview];
-    [circle8 removeFromSuperview];
-    [circle13 removeFromSuperview];
     [pinecone removeFromSuperview];
+    [transCircle8Button removeFromSuperview];
+    [transCircle13Button removeFromSuperview];
+    [thirteenSquares removeFromSuperview];
     [self setup];
 }
 
@@ -100,8 +105,8 @@
 {
     [self.canvas addShape:backgroundCircle];
     [self.canvas addShape:pinecone];
-    [self.canvas addShape:circle8];
-    [self.canvas addShape:circle13];
+    [self.canvas addShape:transCircle8Button];
+    [self.canvas addShape:transCircle13Button];
 }
 
 @end

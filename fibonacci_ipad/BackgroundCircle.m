@@ -47,7 +47,7 @@
     
     tealInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
     tealInnerCircle.center = center;
-    tealInnerCircle.fillColor = COLORWHITE;
+    tealInnerCircle.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grid.png"]];
     tealInnerCircle.strokeColor = COLORTEAL;
     
     numberCircle8 = [C4Shape ellipse:CGRectMake(0,0,525,525)];
@@ -76,7 +76,7 @@
     
     salmonInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
     salmonInnerCircle.center = center;
-    salmonInnerCircle.fillColor = COLORWHITE;
+    salmonInnerCircle.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"grid.png"]];
     salmonInnerCircle.strokeColor = COLORSALMON;
     
     numberCircle13 = [C4Shape ellipse:CGRectMake(0,0,525,525)];

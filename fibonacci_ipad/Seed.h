@@ -10,7 +10,6 @@
 #import "Constants.h"
 #import "Circle8.h"
 #import "Circle13.h"
-#import <QuartzCore/QuartzCore.h>
 @class Seed;
 
 @protocol StartoverDelegate <NSObject>

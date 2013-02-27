@@ -10,7 +10,7 @@
 
 @implementation Circle8
 {
-    C4Shape *localCircle8;
+    C4Shape *transCircle8;
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -24,18 +24,18 @@
 
 -(void)setup
 {
-    localCircle8 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
-    localCircle8.fillColor = COLORTRANS;
-    localCircle8.strokeColor = COLORTEAL;
+    transCircle8 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
+    transCircle8.fillColor = COLORTRANS;
+    transCircle8.strokeColor = COLORTRANS;
 }
 
 -(void)drawRect:(CGRect)rect
 {
-    [self addShape:localCircle8];
+    [self addShape:transCircle8];
 }
 
 -(void)tapCircleEight
-{
+{    
     [self.circle8Delegate circle8Tapped];
     [self.tealCircleDelegate tealCircleShow];
 }

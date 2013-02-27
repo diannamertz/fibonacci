@@ -10,7 +10,7 @@
 
 @implementation Squares
 {
-    C4Shape *allSquares, *square, *square1, *square2, *square3, *square5, *square8, *square13;
+    C4Shape *allSquares, *square, *square1, *square2, *square3, *square5, *square8, *square13, *fakeCircle8, *fakeCircle13;
     C4Label *labelAll, *label, *label1, *label2, *label3, *label5, *label8, *label13;
     C4Label *countLabel0, *countLabel, *countLabel1, *countLabel2, *countLabel3, *countLabel5, *countLabel8, *countLabel13, *countLabelp, *countLabelp1, *countLabelp2, *countLabelp3, *countLabelp5, *countLabelp8, *countLabele1, *countLabele2, *countLabele3, *countLabele5, *countLabele8, *countLabele13;
     C4Shape *allCountLabels, *countInCount;
@@ -19,7 +19,6 @@
 
 -(void)setup
 {
-    
     //allSquares
     allSquares = [C4Shape rect:CGRectMake(0,0,(21*XSQ),(13*XSQ))];
     allSquares.fillColor = COLORTRANS;
@@ -161,6 +160,18 @@
     countInCount.fillColor = COLORTRANS;
     countInCount.strokeColor = COLORTRANS;
     
+    fakeCircle8 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
+    fakeCircle8.fillColor = COLORTRANS;
+    fakeCircle8.strokeColor = COLORTRANS;
+    fakeCircle8.center = CGPointMake(((super.self.width/2)-400), (super.self.height/2));
+    
+    fakeCircle13 = [C4Shape ellipse:CGRectMake(0,0,100,100)];
+    fakeCircle13.fillColor = COLORTRANS;
+    fakeCircle13.strokeColor = COLORTRANS;
+    fakeCircle13.center = CGPointMake(((super.self.width/2)+400), (super.self.height/2));
+    
+    [self addShape:fakeCircle8];
+    [self addShape:fakeCircle13];
     [self addShape:allCountLabels];
     [allCountLabels addShape:countInCount];
 }
@@ -169,7 +180,6 @@
 {
     self = [super initWithFrame:frame];
     if (self !=nil) {
-        //[self setup];
         [self rect:frame];
     }
     return self;
@@ -217,10 +227,10 @@
 -(void)fade1
 {
     countLabelp.animationDuration = 0.5f;
-    countLabelp.textColor = COLORWHITE;
+    countLabelp.textColor = COLORTRANS;
     
     countLabele1.animationDuration = 0.5f;
-    countLabele1.textColor = COLORWHITE;
+    countLabele1.textColor = COLORTRANS;
     [self runMethod:@"addPlus2" afterDelay:0.5f];
 }
 
@@ -246,10 +256,10 @@
 -(void)fade2
 {
     countLabelp1.animationDuration = 0.5f;
-    countLabelp1.textColor = COLORWHITE;
+    countLabelp1.textColor = COLORTRANS;
     
     countLabele2.animationDuration = 0.5f;
-    countLabele2.textColor = COLORWHITE;
+    countLabele2.textColor = COLORTRANS;
     [self runMethod:@"addPlus3" afterDelay:0.5f];
 }
 
@@ -275,10 +285,10 @@
 -(void)fade3
 {
     countLabelp2.animationDuration = 0.5f;
-    countLabelp2.textColor = COLORWHITE;
+    countLabelp2.textColor = COLORTRANS;
     
     countLabele3.animationDuration = 0.5f;
-    countLabele3.textColor = COLORWHITE;
+    countLabele3.textColor = COLORTRANS;
     [self runMethod:@"addPlus5" afterDelay:0.5f];
 }
 
@@ -304,10 +314,10 @@
 -(void)fade5
 {
     countLabelp3.animationDuration = 0.5f;
-    countLabelp3.textColor = COLORWHITE;
+    countLabelp3.textColor = COLORTRANS;
     
     countLabele5.animationDuration = 0.5f;
-    countLabele5.textColor = COLORWHITE;
+    countLabele5.textColor = COLORTRANS;
     [self runMethod:@"addPlus8" afterDelay:0.5f];
 }
 
@@ -333,10 +343,10 @@
 -(void)fade8
 {
     countLabelp5.animationDuration = 0.5f;
-    countLabelp5.textColor = COLORWHITE;
+    countLabelp5.textColor = COLORTRANS;
     
     countLabele8.animationDuration = 0.5f;
-    countLabele8.textColor = COLORWHITE;
+    countLabele8.textColor = COLORTRANS;
     [self runMethod:@"addPlus13" afterDelay:0.5f];
 }
 
@@ -362,18 +372,18 @@
 -(void)fade13
 {
     countLabelp8.animationDuration = 0.5f;
-    countLabelp8.textColor = COLORWHITE;
+    countLabelp8.textColor = COLORTRANS;
     
     countLabele13.animationDuration = 0.5f;
-    countLabele13.textColor = COLORWHITE;
+    countLabele13.textColor = COLORTRANS;
 }
 
 -(void)endThirteenSquares
 {
     allSquares.animationDuration = 2.0f;
     allSquares.animationOptions = AUTOREVERSE | REPEAT;
-    allSquares.fillColor = COLORWHITE;
-    allSquares.strokeColor = COLORWHITE;
+    allSquares.fillColor = COLORTRANS;
+    allSquares.strokeColor = COLORTRANS;
     
     [self removeSquaresFromView];
 }
@@ -389,16 +399,25 @@
 {
     [countInCount removeFromSuperview];
 
-    countLabel8.animationDuration = 3.0f;
+    countLabel8.animationDuration = 2.0f;
     countLabel8.origin = CGPointMake((super.self.width/2) - 405,((allCountLabels.height/2)-.5*CHI));
     
-    countLabel13.animationDuration = 3.0f;
+    countLabel13.animationDuration = 2.0f;
     countLabel13.origin = CGPointMake((allCountLabels.width/2) + 385,((allCountLabels.height/2)-.5*CHI));
     countLabel13.textColor = COLORSALMON;
     
-    allCountLabels.animationDuration = 3.0f;
+    allCountLabels.animationDuration = 2.0f;
     allCountLabels.center = CGPointMake((self.width/2),(self.height/2));
+    
+    fakeCircle8.animationDuration = 2.0f;
+    fakeCircle8.fillColor = COLORWHITE;
+    fakeCircle8.strokeColor = COLORTEAL;
+    
+    fakeCircle13.animationDuration = 2.0f;
+    fakeCircle13.fillColor = COLORWHITE;
+    fakeCircle13.strokeColor = COLORSALMON;
 }
+
 
 -(void)touchesBegan {
     labelAll.highlighted = YES;
