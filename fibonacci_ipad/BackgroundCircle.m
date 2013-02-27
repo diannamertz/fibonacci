@@ -42,13 +42,13 @@
     
     tealCircle = [C4Shape ellipse:CGRectMake(0, 0, 550, 550)];
     tealCircle.center = center;
-    tealCircle.fillColor = COLORBLACKTRANS;
-    tealCircle.strokeColor = COLORTEAL;
+    tealCircle.fillColor = COLORTRANS;
+    tealCircle.strokeColor = COLORTRANS;
     
     tealInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
     tealInnerCircle.center = center;
     tealInnerCircle.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ecailles.png"]];
-    tealInnerCircle.strokeColor = COLORTEAL;
+    tealInnerCircle.strokeColor = COLORTRANS;
     
     numberCircle8 = [C4Shape ellipse:CGRectMake(0,0,525,525)];
     numberCircle8.center = center;
@@ -71,13 +71,16 @@
     
     salmonCircle = [C4Shape ellipse:CGRectMake(0, 0, 550, 550)];
     salmonCircle.center = center;
-    salmonCircle.fillColor = COLORBLACKTRANS;
-    salmonCircle.strokeColor = COLORSALMON;
+    //salmonCircle.fillColor = COLORBLACKTRANS;
+    //salmonCircle.strokeColor = COLORSALMON;
+    salmonCircle.fillColor = COLORTRANS;
+    salmonCircle.strokeColor = COLORTRANS;
     
     salmonInnerCircle = [C4Shape ellipse:CGRectMake(0, 0, 450, 450)];
     salmonInnerCircle.center = center;
+    salmonInnerCircle.strokeColor = COLORTRANS;
     salmonInnerCircle.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ecailles.png"]];
-    salmonInnerCircle.strokeColor = COLORSALMON;
+    //salmonInnerCircle.strokeColor = COLORSALMON;
     
     numberCircle13 = [C4Shape ellipse:CGRectMake(0,0,525,525)];
     numberCircle13.center = center;
@@ -111,6 +114,15 @@
     [self addShape:tealCircle];
     [self addShape:numberCircle8];
     [self addShape:tealInnerCircle];
+    
+    tealCircle.animationDuration = 2.0f;
+    numberCircle8.animationDuration = 2.0f;
+    tealInnerCircle.animationDuration = 2.0f;
+    
+    tealInnerCircle.strokeColor = COLORTEAL;
+    
+    tealCircle.fillColor = COLORBLACKTRANS;
+    tealCircle.strokeColor = COLORTEAL;
 }
 
 -(void)salmonCircleShow
@@ -123,6 +135,15 @@
     [self addShape:salmonCircle];
     [self addShape:numberCircle13];
     [self addShape:salmonInnerCircle];
+    
+    salmonCircle.animationDuration = 2.0f;
+    numberCircle13.animationDuration = 2.0f;
+    salmonInnerCircle.animationDuration = 2.0f;
+
+    salmonInnerCircle.strokeColor = COLORSALMON;
+    
+    salmonCircle.fillColor = COLORBLACKTRANS;
+    salmonCircle.strokeColor = COLORSALMON;
 }
 
 @end
