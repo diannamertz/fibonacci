@@ -36,7 +36,6 @@
 {
     self = [super initWithFrame:frame];
     if (self !=nil) {
-        //[self setup];
         [self rect:frame];
     }
     return self;
@@ -54,7 +53,7 @@
     label.textColor = COLORTRANS;
     label.textColor = COLORTRANS;
     
-    [self runMethod:@"endIntro2" afterDelay:1.0f];
+    [self runMethod:@"endIntro2" afterDelay:0.5f];
 }
 
 -(void)endIntro2

@@ -26,34 +26,32 @@
     
     //define the squares
     square = [C4Shape rect:CGRectMake(5*XSQ,3*XSQ,XSQ,XSQ)];
-    square.strokeColor = COLORSALMON;
-    square.fillColor = COLORGREY;
-    squareCenter.y = (5*XSQ)+(XSQ/2);
-    squareCenter.x = (3*XSQ);
+    square.strokeColor = COLORTRANS;
+    square.fillColor = COLORTRANS;
    
     square1 = [C4Shape rect:CGRectMake(5*XSQ,4*XSQ,XSQ,XSQ)];
     square1.strokeColor = COLORSALMON;
     square1.fillColor = COLORGREY;
 
     square2 = [C4Shape rect:CGRectMake(6*XSQ,3*XSQ,2*XSQ,2*XSQ)];
-    square2.strokeColor = COLORSALMON;
-    square2.fillColor = COLORGREY;
+    square2.strokeColor = COLORTRANS;
+    square2.fillColor = COLORTRANS;
 
     square3 = [C4Shape rect:CGRectMake(5*XSQ,0,3*XSQ,3*XSQ)];
-    square3.strokeColor = COLORSALMON;
-    square3.fillColor = COLORGREY;
+    square3.strokeColor = COLORTRANS;
+    square3.fillColor = COLORTRANS;
 
     square5 = [C4Shape rect:CGRectMake(0,0,5*XSQ,5*XSQ)];
-    square5.strokeColor = COLORSALMON;
-    square5.fillColor = COLORGREY;
+    square5.strokeColor = COLORTRANS;
+    square5.fillColor = COLORTRANS;
 
     square8 = [C4Shape rect:CGRectMake(0,5*XSQ,8*XSQ,8*XSQ)];
-    square8.strokeColor = COLORSALMON;
-    square8.fillColor = COLORGREY;
+    square8.strokeColor = COLORTRANS;
+    square8.fillColor = COLORTRANS;
     
     square13 = [C4Shape rect:CGRectMake(8*XSQ,0,13*XSQ,13*XSQ)];
-    square13.strokeColor = COLORSALMON;
-    square13.fillColor = COLORGREY;
+    square13.strokeColor = COLORTRANS;
+    square13.fillColor = COLORTRANS;
     
     //square text
     
@@ -117,34 +115,25 @@
     h = ((allCountLabels.height/2)-.5*CHI);
     
     countLabel0 = [C4Label labelWithText:@"0" font:squaresFont frame:CGRectMake(0,h,CHI,CHI)];
-    
     countLabel = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(2*CHI,h,CHI,CHI)];
     countLabel1 = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(4*CHI,h,CHI,CHI)];
     countLabel2 = [C4Label labelWithText:@"2" font:squaresFont frame:CGRectMake(6*CHI,h,CHI,CHI)];
     countLabel3 = [C4Label labelWithText:@"3" font:squaresFont frame:CGRectMake(8*CHI,h,CHI,CHI)];
     countLabel5 = [C4Label labelWithText:@"5" font:squaresFont frame:CGRectMake(10*CHI,h,CHI,CHI)];
-    
     countLabel8 = [C4Label labelWithText:@"8" font:squaresFont frame:CGRectMake(12*CHI,h,CHI,CHI)];
-    
     countLabel13 = [C4Label labelWithText:@"13" font:squaresFont frame:CGRectMake(14*CHI,h,CHI,CHI)];
     
     countLabelp = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(CHI,h,CHI,CHI)];
-    
     countLabelp1 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(3*CHI,h,CHI,CHI)];
     countLabele1 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(3*CHI,h,CHI,CHI)];
-    
     countLabelp2 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(5*CHI,h,CHI,CHI)];
     countLabele2 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(5*CHI,h,CHI,CHI)];
-    
     countLabelp3 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(7*CHI,h,CHI,CHI)];
     countLabele3 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(7*CHI,h,CHI,CHI)];
-    
     countLabelp5 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(9*CHI,h,CHI,CHI)];
     countLabele5 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(9*CHI,h,CHI,CHI)];
-    
     countLabelp8 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
     countLabele8 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
-    
     countLabele13 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(13*CHI,h,CHI,CHI)];
     
     countLabel0.textColor = COLORTEAL;
@@ -202,6 +191,9 @@
 {
     [countInCount addLabel:countLabel];
     [allSquares addShape:square];
+    square.animationDuration = 2.0f;
+    square.fillColor = COLORGREY;
+    square.strokeColor = COLORSALMON;
     [self runMethod:@"addPlus1" afterDelay:0.5f];
 }
 
@@ -221,6 +213,9 @@
 {
     [countInCount addLabel:countLabel1];
     [allSquares addShape:square1];
+    square1.animationDuration = 2.0f;
+    square1.fillColor = COLORGREY;
+    square1.strokeColor = COLORSALMON;
     [self runMethod:@"fade1" afterDelay:0.5f];
 }
 
@@ -250,6 +245,9 @@
 {
     [countInCount addLabel:countLabel2];
     [allSquares addShape:square2];
+    square2.animationDuration = 2.0f;
+    square2.fillColor = COLORGREY;
+    square2.strokeColor = COLORSALMON;
     [self runMethod:@"fade2" afterDelay:0.5f];
 }
 
@@ -279,6 +277,9 @@
 {
     [countInCount addLabel:countLabel3];
     [allSquares addShape:square3];
+    square3.animationDuration = 2.0f;
+    square3.fillColor = COLORGREY;
+    square3.strokeColor = COLORSALMON;
     [self runMethod:@"fade3" afterDelay:0.5f];
 }
 
@@ -308,6 +309,9 @@
 {
     [countInCount addLabel:countLabel5];
     [allSquares addShape:square5];
+    square5.animationDuration = 2.0f;
+    square5.fillColor = COLORGREY;
+    square5.strokeColor = COLORSALMON;
     [self runMethod:@"fade5" afterDelay:0.5f];
 }
 
@@ -337,6 +341,9 @@
 {
     [allCountLabels addLabel:countLabel8];
     [allSquares addShape:square8];
+    square8.animationDuration = 2.0f;
+    square8.fillColor = COLORGREY;
+    square8.strokeColor = COLORSALMON;
     [self runMethod:@"fade8" afterDelay:0.5f];
 }
 
@@ -366,6 +373,9 @@
 {
     [allCountLabels addLabel:countLabel13];
     [allSquares addShape:square13];
+    square13.animationDuration = 2.0f;
+    square13.fillColor = COLORGREY;
+    square13.strokeColor = COLORSALMON;
     [self runMethod:@"fade13" afterDelay:0.5f];
 }
 
