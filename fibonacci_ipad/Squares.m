@@ -55,7 +55,7 @@
     
     //square text
     
-    C4Font *squaresFont = [C4Font fontWithName:@"HelveticaNeue" size:25.0f];
+    C4Font *squaresFont = [C4Font fontWithName:@"Futura" size:25.0f];
     
     label = [C4Label labelWithText:@"1" font:squaresFont frame:CGRectMake(0,0,XSQ,XSQ)];
     label.textColor = COLORWHITE;
@@ -135,6 +135,19 @@
     countLabelp8 = [C4Label labelWithText:@"+" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
     countLabele8 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(11*CHI,h,CHI,CHI)];
     countLabele13 = [C4Label labelWithText:@"=" font:squaresFont frame:CGRectMake(13*CHI,h,CHI,CHI)];
+    
+    countLabelp.textColor = COLORGREY;
+    countLabelp1.textColor = COLORGREY;
+    countLabele1.textColor = COLORGREY;
+    countLabelp2.textColor = COLORGREY;
+    countLabele2.textColor = COLORGREY;
+    countLabelp3.textColor = COLORGREY;
+    countLabele3.textColor = COLORGREY;
+    countLabelp5.textColor = COLORGREY;
+    countLabele5.textColor = COLORGREY;
+    countLabelp8.textColor = COLORGREY;
+    countLabele8.textColor = COLORGREY;
+    countLabele13.textColor = COLORGREY;
     
     countLabel0.textColor = COLORTEAL;
     countLabel.textColor = COLORTEAL;
@@ -410,7 +423,7 @@
     [countInCount removeFromSuperview];
 
     countLabel8.animationDuration = 2.0f;
-    countLabel8.origin = CGPointMake((super.self.width/2) - 405,((allCountLabels.height/2)-.5*CHI));
+    countLabel8.origin = CGPointMake((super.self.width/2) - 406,((allCountLabels.height/2)-.5*CHI));
     
     countLabel13.animationDuration = 2.0f;
     countLabel13.origin = CGPointMake((allCountLabels.width/2) + 385,((allCountLabels.height/2)-.5*CHI));

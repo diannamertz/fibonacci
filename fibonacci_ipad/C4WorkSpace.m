@@ -28,7 +28,7 @@
     CGPoint center;
     center = self.canvas.center;
     
-    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, self.canvas.width, self.canvas.height)];
+    intro = [[Intro alloc] initWithFrame:CGRectMake(0, 0, 24*XSQ, 18*XSQ)];
     intro.center = center;
     [intro addGesture:TAP name:@"introGesture" action:@"endIntro"];
     intro.fillColor = COLORTRANS;
@@ -84,7 +84,7 @@
     i1 = [C4Image imageNamed:@"nav-back.png"];
     i1.center = i1Center;
 
-    [self.canvas addShape:intro];
+    [self addShape:intro];
 }
 
 -(void)restart

@@ -22,15 +22,15 @@
     center.x = self.width/2;
     center.y = self.height/2;
 
-    introBackground = [C4Shape rect:CGRectMake(0, 0, self.height, self.height)];
+    introBackground = [C4Shape rect:CGRectMake(0, 0, self.width, self.height)];
     introBackground.strokeColor = COLORTRANS;
     introBackground.fillColor = COLORBLACKTRANS;
     introBackground.center = center;
     
     //create an initial font and a label
-    C4Font *font = [C4Font fontWithName:@"HelveticaNeue" size:60.0f];
+    C4Font *font = [C4Font fontWithName:@"Futura" size:60.0f];
     
-    label = [C4Label labelWithText:@"The Fibonacci Sequence" font:font frame:introBackground.frame];
+    label = [C4Label labelWithText:@"THE FIBONACCI SEQUENCE" font:font frame:introBackground.frame];
     label.textColor = COLORSALMON;
     label.numberOfLines = 3;
     label.textAlignment = ALIGNTEXTCENTER;
