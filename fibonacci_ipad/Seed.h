@@ -23,6 +23,7 @@
 -(void)swipePinecone;
 -(void)circle8Tapped;
 -(void)circle13Tapped;
+-(void)seedBeginning;
 
 
 @end

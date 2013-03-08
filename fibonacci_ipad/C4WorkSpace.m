@@ -47,7 +47,7 @@
     pinecone.strokeColor = COLORTRANS;
     pinecone.center = center;
     pinecone.startoverDelegate = self;
-    [pinecone addGesture:SWIPERIGHT name:@"swipeGesture" action:@"swipePinecone"];
+    [pinecone addGesture:TAP name:@"swipeGesture" action:@"swipePinecone"];
         
     CGPoint circleCenter8;
     circleCenter8.x = center.x - 400;
