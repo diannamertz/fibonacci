@@ -71,8 +71,6 @@
     
     salmonCircle = [C4Shape ellipse:CGRectMake(0, 0, 550, 550)];
     salmonCircle.center = center;
-    //salmonCircle.fillColor = COLORBLACKTRANS;
-    //salmonCircle.strokeColor = COLORSALMON;
     salmonCircle.fillColor = COLORTRANS;
     salmonCircle.strokeColor = COLORTRANS;
     
@@ -80,7 +78,6 @@
     salmonInnerCircle.center = center;
     salmonInnerCircle.strokeColor = COLORTRANS;
     salmonInnerCircle.fillColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"ecailles.png"]];
-    //salmonInnerCircle.strokeColor = COLORSALMON;
     
     numberCircle13 = [C4Shape ellipse:CGRectMake(0,0,525,525)];
     numberCircle13.center = center;
@@ -120,7 +117,6 @@
     tealInnerCircle.animationDuration = 2.0f;
     
     tealInnerCircle.strokeColor = COLORTEAL;
-    
     tealCircle.fillColor = COLORBLACKTRANS;
     tealCircle.strokeColor = COLORTEAL;
 }

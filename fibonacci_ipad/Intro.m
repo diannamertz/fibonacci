@@ -26,10 +26,8 @@
     introBackground.strokeColor = COLORTRANS;
     introBackground.fillColor = COLORBLACKTRANS;
     introBackground.center = center;
-    
-    //create an initial font and a label
+
     C4Font *font = [C4Font fontWithName:@"Futura" size:60.0f];
-    
     label = [C4Label labelWithText:@"THE FIBONACCI SEQUENCE" font:font frame:introBackground.frame];
     label.textColor = COLORSALMON;
     label.numberOfLines = 3;

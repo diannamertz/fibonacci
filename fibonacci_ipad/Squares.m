@@ -441,7 +441,6 @@
     fakeCircle13.strokeColor = COLORSALMON;
 }
 
-
 -(void)touchesBegan {
     labelAll.highlighted = YES;
 }
